@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { FC, HTMLAttributes } from "react";
+import { FC } from "react";
 
 interface OrbitProps {
   className?: string;

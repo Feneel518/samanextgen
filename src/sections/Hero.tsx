@@ -1,7 +1,5 @@
 import Fan from "@/components/confuse/Fan";
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Orbit from "@/components/Orbit";
-import Planet from "@/components/Planet";
 import ShinyButton from "@/components/ShinyButton";
 import Waves from "@/components/Waves";
 import Image from "next/image";
