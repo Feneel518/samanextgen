@@ -15,7 +15,7 @@ const Offline: FC<OfflineProps> = ({}) => {
             className="object-contain"
           ></Image>
         </div>
-        <div className="w-[550px] border-l border-gray-200/20 flex items-start uppercase tracking-wider shrink-0 justify-end ml-5 ">
+        <div className="w-[550px] border-l border-gray-200/20 flex items-start text-6xl tracking-wider shrink-0 justify-end ml-5 font-oswald pl-8">
           The Future of Voice- Offline and Private
         </div>
       </div>
