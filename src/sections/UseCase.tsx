@@ -13,7 +13,7 @@ const UseCase: FC<UseCaseProps> = ({}) => {
       <div className="py-20 flex border-b border-gray-200/20">
         <div className="w-[550px] border-r border-gray-200/20 flex items-start shrink-0 ">
           <div className="flex flex-col gap-6 sticky top-4 transition-all duration-200 ease-in-out">
-            <h1 className="tracking-wider  font-oswald text-8xl">
+            <h1 className="tracking-wider  font-oswald text-6xl">
               Featured <br />
               Work
             </h1>
