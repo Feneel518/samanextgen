@@ -12,7 +12,8 @@
     --color-border: theme("colors.gray.200/10%");
     --color-sama-primary:theme("colors.sama-primary")
     --color-sama-secondary:theme("colors.sama-secondary")
-  }
+  ;
+    --radius: 0.5rem}
 
   .absolute-center {
     @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;

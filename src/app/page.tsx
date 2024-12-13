@@ -4,6 +4,8 @@ import Hero from "@/sections/Hero";
 import LogoTicker from "@/sections/LogoTicker";
 import Offline from "@/sections/Offline";
 import Products from "@/sections/Products";
+import UseCase from "@/sections/UseCase";
+import WhyOffline from "@/sections/WhyOffline";
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
       <Clients></Clients>
       <Products></Products>
       <Offline></Offline>
+      <UseCase></UseCase>
+      <WhyOffline></WhyOffline>
     </>
   );
 }
