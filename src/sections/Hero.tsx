@@ -1,105 +1,98 @@
-import Fan from "@/components/confuse/Fan";
-import Orbit from "@/components/Orbit";
 import ShinyButton from "@/components/ShinyButton";
 import Waves from "@/components/Waves";
+import { section } from "framer-motion/client";
 import Image from "next/image";
 
 export const Hero = () => {
   return (
-    <section>
-      <div className="">
-        {/* <MaxWidthWrapper> */}
-        {/* <div className="border-l border-r border-[var(--color-border)] relative"> */}
-        {/* <h4 className="p-4 border w-fit border-gray-200/10 absolute top-[4%] -left-[4%] bg-gray-900/40 backdrop-blur-md rounded-md">
-            Your Offline Solution is here.
-          </h4> */}
-        <div className="px-4 py-24 md:py-36 relative isolate  [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]">
-          <div className="opacity-30 absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-sama-primary via-sama-secondary/75 to-transparent -z-10"></div>
-          <div className="absolute inset-0 -z-10">
-            <div className="absolute-center">
-              <Orbit className="size-[350px]"></Orbit>
-            </div>
-            <div className="absolute-center">
-              <Orbit className="size-[600px]"></Orbit>
-            </div>
-            <div className="absolute-center">
-              <Orbit className="size-[850px]"></Orbit>
-            </div>
-            <div className="absolute-center">
-              <Orbit className="size-[1100px]"></Orbit>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-8 max-w-screen-md mx-auto ">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold font-oswald text-center gray-grad leading-[55px] ">
+    <section className="px-8">
+      <main className="grid grid-cols-2  border-b border-gray-200/20 items-start  py-20">
+        <div className="">
+          <div className="flex flex-col gap-8">
+            <h1 className="font-oswald text-7xl gray-grad">
               Seamless <span className="brand-grad">Voice Control </span>
-              Without the Internet
+              Without the <br />
+              Internet
             </h1>
-            <div className="text-center text-md flex flex-col gap-4 font-light ">
-              <p>
+            <div className="w-2/3 text-gray-400 flex flex-col ">
+              <p className="w-[80%] text-xl text-pretty">
                 We set the benchmark in delivering flawless voice activation
                 across devices. Our offline voice solutions bring the benefits
                 of Edge AI to a wide range of products, enabling smarter and
-                more responsive solutions.
-              </p>
-              <p>
-                Our solutions offer fast, accurate, and private on-device
-                performance, empowering brands to create unique, secure, and
-                highly efficient experiences.
+                more responsive solutions
               </p>
             </div>
-            <ShinyButton className="h-14 text-2xl gradient text-white w-[50%] mx-auto lg:max-w-80">
-              Explore More.
+            <ShinyButton className="w-80 text-sama-background h-12">
+              Expore More
             </ShinyButton>
           </div>
-          <div className="relative isolate container">
-            <div className="absolute left-1/2 top-0 z-10 ">
-              <div className="relative size-48  translate-x-[440px] -translate-y-[550px]">
-                <Image src={"/cylinder.png"} alt="cylinder image" fill></Image>
+        </div>
+        <div className="relative h-[600px]">
+          <div className="absolute top-0 z-10 w-full h-full flex items-center justify-center gap-8 bg-white/10 backdrop-blur-sm ">
+            <div className="flex items-end gap-8">
+              <div className="mb-8">
+                <Waves></Waves>
               </div>
-              <div className="relative size-48  -translate-x-[590px] -translate-y-[350px] ">
-                <Image src={"/noodle.png"} alt="cylinder image" fill></Image>
+              <div className="relative size-96 ">
+                <Image
+                  src={"/NoInternet.png"}
+                  alt="No Internet"
+                  fill
+                  className="object-contain"
+                ></Image>
               </div>
-            </div>
-            <div className="absolute top-[30%] left-16 z-20 hidden lg:flex">
-              <div className="bg-sama-secondary/40 backdrop-blur-md border-gray-700 rounded-xl p-4 w-72">
-                <div className="text-white">
-                  Control everything without the internet.
-                </div>
-              </div>
-            </div>
-            <div className="absolute top-[65%] right-16 z-20 hidden lg:flex">
-              <div className="bg-sama-secondary/40 backdrop-blur-md border-gray-700 rounded-xl p-4 w-72">
-                <div className="text-white">
-                  No internet, No worry - it&apos;s still accessible.
-                </div>
-              </div>
-            </div>
-            <div className="relative w-full lg:w-[80%] mx-auto aspect-[5/3] mt-20 rounded-2xl overflow-hidden border-2 ">
-              <div className="absolute w-full h-full bg-black/25 z-10 "></div>
-              <Image
-                src={"/heroImage.png"}
-                alt="Offline Voice Automation Image"
-                fill
-                className="object-cover "
-              ></Image>
-              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 ">
-                <div className="">
-                  <div className="bg-black/80 p-4 rounded-full  ">
-                    <Waves></Waves>
-                  </div>
-                </div>
-              </div>
-              <div className="absolute -top-36 left-1/3 -translate-x-1/2 hidden lg:flex">
-                <Fan></Fan>
+              <div className="mb-8">
+                <Waves></Waves>
               </div>
             </div>
           </div>
+          <Image
+            src={"/heroImage1.png"}
+            alt="Hero Image"
+            fill
+            className="object-cover rounded-3xl blur-[1px]"
+          ></Image>
         </div>
-      </div>
-      {/* </div> */}
-      {/* </MaxWidthWrapper> */}
+      </main>
     </section>
+    // <section>
+    //   {/* <div className=" h-screen py-24 flex items-center justify-center px-24">
+    //     <div className="grid grid-cols-2 gap-10 h-[80%] items-center">
+    //       <div className="flex flex-col gap-8">
+    //         <h1 className="text-7xl font-oswald gray-grad">
+    //           Seamless <span className="brand-grad">Voice Control </span>
+    //           Without the Internet
+    //         </h1>
+    //         <div className="flex flex-col gap-4">
+    //           <p>
+    //             We set the benchmark in delivering flawless voice activation
+    //             across devices. Our offline voice solutions bring the benefits
+    //             of Edge AI to a wide range of products, enabling smarter and
+    //             more responsive solutions
+    //           </p>
+    //           <p>
+    //             Our solutions offer fast, accurate, and private on-device
+    //             performance, empowering brands to create unique, secure, and
+    //             highly efficient experiences.
+    //           </p>
+    //         </div>
+    //         <div className="">
+    //           <ShinyButton className="w-48 text-sama-background h-14">
+    //             Expore More
+    //           </ShinyButton>
+    //         </div>
+    //       </div>
+    //       <div className="relative w-full h-full">
+    //         <Image
+    //           src={"/heroImage.png"}
+    //           alt="heroimage"
+    //           fill
+    //           className="object-contain"
+    //         ></Image>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </section> */}
   );
 };
 

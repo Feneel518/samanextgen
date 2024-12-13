@@ -58,70 +58,58 @@ export const Header = () => {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   return (
     <>
-      <header className="border-b border-gray-200/20 w-full ">
-        <MaxWidthWrapper>
-          <div className="h-18 flex items-center justify-between ">
-            {/* logo */}
-            <div className="flex gap-4 items-center ">
-              <div className="size-16 relative ">
-                <Image
-                  src={logoImage}
-                  alt="SAMA Logo"
-                  fill
-                  className="object-contain"
-                ></Image>
-              </div>
+      <header className="  w-full px-8 ">
+        <div className="h-24 flex items-center justify-between border-b  border-gray-200/20">
+          {/* logo */}
+          <div className="flex gap-4 items-center ">
+            <div className="size-16 relative ">
+              <Image
+                src={logoImage}
+                alt="SAMA Logo"
+                fill
+                className="object-contain"
+              ></Image>
             </div>
-            {/* logo */}
-
-            {/* Middle nav */}
-            <div className="h-full lg:flex items-center space-x-8    hidden ">
-              <AnimatedBackground
-                className="rounded-lg bg-gradient-to-br from-sama-primary to-sama-secondary  shadow-2xl shadow-white/20 text-black h-full"
-                transition={{
-                  type: "spring",
-                  bounce: 0.2,
-                  duration: 0.6,
-                }}
-                enableHover
-              >
-                {LINKS.map((link, index) => {
-                  return (
-                    <Link
-                      data-id={`card-${index}`}
-                      key={link.id}
-                      href={link.link}
-                      className={cn(
-                        "p-2  delay-75 hover:text-white text-sm uppercase tracking-widest text-white/50",
-                        {
-                          "font-bold  text-sama-primary underline underline-offset-4  ":
-                            pathname === link.link,
-                        }
-                      )}
-                    >
-                      {/* <Heading className="sm:text-lg md:text-lg lg:text-lg tracking-wide"> */}
-                      {link.name}
-                      {/* </Heading> */}
-                    </Link>
-                  );
-                })}
-              </AnimatedBackground>
-            </div>
-            {/* Middle nav */}
-
-            {/* CTA */}
-            <div
-              className="lg:hidden "
-              onClick={() => setIsMobileOpen((prev) => !prev)}
-            >
-              <SideMenuButton></SideMenuButton>
-            </div>
-            {/* CTA */}
           </div>
-        </MaxWidthWrapper>
+          {/* logo */}
+
+          {/* Middle nav */}
+          <div className="h-full lg:flex items-center space-x-8    hidden ">
+            {LINKS.map((link, index) => {
+              return (
+                <Link
+                  data-id={`card-${index}`}
+                  key={link.id}
+                  href={link.link}
+                  className={cn(
+                    "p-2  delay-75 hover:text-white text-sm uppercase tracking-widest text-white/50 hover:underline hover:underline-offset-4",
+                    {
+                      "font-bold  text-sama-primary underline underline-offset-4  ":
+                        pathname === link.link,
+                    }
+                  )}
+                >
+                  {/* <Heading className="sm:text-lg md:text-lg lg:text-lg tracking-wide"> */}
+                  {link.name}
+                  {/* </Heading> */}
+                </Link>
+              );
+            })}
+          </div>
+          {/* Middle nav */}
+
+          {/* CTA */}
+          <div
+            className="lg:hidden "
+            onClick={() => setIsMobileOpen((prev) => !prev)}
+          >
+            <SideMenuButton></SideMenuButton>
+          </div>
+          {/* CTA */}
+        </div>
       </header>
       {isMobileOpen && (
-        <div className="fixed top-18 left-0 right-0 bottom-0 bg-gray-950">
+        <div className="fixed top-24 left-0 right-0 bottom-0 bg-gray-950 border border-gray-200/20">
           <div className="container h-full">
             <nav className="flex flex-col items-center gap-4 py-8  h-full ">
               {LINKS.map((link) => {
