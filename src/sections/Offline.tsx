@@ -9,7 +9,7 @@ const Offline: FC<OfflineProps> = ({}) => {
       <div className="py-20 flex border-b border-gray-200/20">
         <div className="relative w-[1200px] aspect-[4/2]">
           <Image
-            src={"/offline.png"}
+            src={"/offlineWhite.png"}
             alt="offline control"
             fill
             className="object-contain"
