@@ -28,7 +28,7 @@ export const Hero = () => {
           </div>
         </div>
         <div className="relative h-[600px]">
-          <div className="absolute top-0 z-10 w-full h-full flex items-center justify-center gap-8 bg-white/10 backdrop-blur-sm ">
+          <div className="absolute top-0 z-10 w-full h-full flex items-center justify-center gap-8 bg-black/30 backdrop-blur-[2px] ">
             <div className="flex items-end gap-8">
               <div className="mb-8">
                 <Waves></Waves>

@@ -9,7 +9,7 @@ const WhyOffline: FC<WhyOfflineProps> = ({}) => {
       <div className="py-20 flex border-b border-gray-200/20">
         <div className="relative w-[1200px] aspect-[4/2]">
           <p className="uppercase mb-4"> How we Work</p>
-          <h1 className="font-oswald text-8xl">
+          <h1 className="font-oswald text-8xl gray-grad">
             We help our clients automate without the internet.
           </h1>
         </div>

@@ -9,7 +9,7 @@ const Clients: FC<ClientsProps> = ({}) => {
         <div className="w-80 h-20 border-r border-gray-200/20 flex items-center uppercase tracking-wider">
           Our Clients
         </div>
-        <div className="flex items-center justify-around w-full text-3xl tracking-wider text-gray-400 uppercas font-light">
+        <div className="flex items-center justify-around w-full text-3xl tracking-wider  text-gray-400  font-light">
           <div className="">JIO</div>
           <div className="">Globaltronics</div>
           <div className="">Bharat Forge</div>
