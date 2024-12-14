@@ -5,11 +5,11 @@ interface ClientsProps {}
 const Clients: FC<ClientsProps> = ({}) => {
   return (
     <section className=" px-8 ">
-      <div className="flex max-lg:flex-col py-6 lg:py-10 border-b border-gray-200/20">
-        <div className="w-80 h-20 lg:border-r border-gray-200/20 flex items-center uppercase tracking-wider">
+      <div className="flex max-lg:flex-col py-10 gap-10 border-b border-gray-200/20">
+        <div className="w-80 lg:h-20 lg:border-r border-gray-200/20 flex items-center uppercase tracking-wider">
           Our Clients
         </div>
-        <div className="hidden items-center justify-around w-full text-3xl tracking-wider  text-gray-400  font-light lg:flex">
+        <div className="hidden items-center justify-around w-full md:text-xl xl:text-3xl tracking-wider  text-gray-400  font-light lg:flex">
           <div className="">JIO</div>
           <div className="">Globaltronics</div>
           <div className="">Bharat Forge</div>

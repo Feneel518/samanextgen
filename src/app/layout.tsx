@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Oswald, Poppins, Syne } from "next/font/google";
 import "./globals.css";
+import ScreenSize from "@/components/ScreenSize";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -27,6 +28,9 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} ${syne.variable} antialiased bg-sama-background text-gray-300 font-poppins m-4 border border-gray-200/20`}
       >
+        <div className="fixed bottom-8 left-8">
+          <ScreenSize></ScreenSize>
+        </div>
         {children}
       </body>
     </html>

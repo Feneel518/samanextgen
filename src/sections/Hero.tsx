@@ -9,25 +9,25 @@ export const Hero = () => {
       <main className="grid lg:grid-cols-2 max-lg:gap-10 border-b border-gray-200/20 items-start  py-10 lg:py-20 ">
         <div className="">
           <div className="flex flex-col gap-8">
-            <h1 className="font-oswald text-5xl lg:text-7xl gray-grad">
+            <h1 className="font-oswald text-5xl md:text-6xl lg:text-7xl gray-grad">
               Seamless <span className="brand-grad">Voice Control </span>
               Without the <br className="hidden lg:flex" />
               Internet
             </h1>
-            <div className="lg:w-2/3 text-gray-400 flex flex-col ">
-              <p className="lg:w-[80%] text-xl text-pretty">
+            <div className="xl:w-2/3 text-gray-400 flex flex-col ">
+              <p className="xl:w-[80%] text-lg lg:text-xl text-pretty">
                 We set the benchmark in delivering flawless voice activation
                 across devices. Our offline voice solutions bring the benefits
                 of Edge AI to a wide range of products, enabling smarter and
                 more responsive solutions
               </p>
             </div>
-            <ShinyButton className="w-80 text-sama-background h-12">
+            <ShinyButton className="lg:w-80 text-sama-background h-12">
               Expore More
             </ShinyButton>
           </div>
         </div>
-        <div className="">
+        <div className="max-lg:-mt-8">
           <div className="relative h-[400px] lg:h-[500px]">
             <Image
               src={"/heroImage3.png"}
@@ -36,7 +36,7 @@ export const Hero = () => {
               className="object-contain rounded-3xl"
             ></Image>
           </div>
-          <div className="flex items-center justify-center gap-8 w-full h-full lg:ml-4 max-lg:-mt-8">
+          <div className="flex items-center justify-center gap-8 w-full h-full lg:ml-4 max-sm:-mt-8">
             <div className="">
               <Waves></Waves>
             </div>

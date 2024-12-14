@@ -31,32 +31,36 @@ const Noise: FC<NoiseProps> = ({}) => {
   return (
     <section className="px-8">
       <div className="py-10 border-b border-gray-200/20">
-        <h1 className="text-6xl font-oswald text-center">Voice Optimization</h1>
+        <h1 className="text-5xl md:text-6xl font-oswald text-center">
+          Voice Optimization
+        </h1>
       </div>
-      <div className="py-20 flex border-b border-gray-200/20">
-        <div className="flex-1 border-r border-gray-200/20 flex items-start shrink-0 ">
-          <div className="flex flex-col gap-6 w-full pr-20 sticky top-4 transition-all duration-200 ease-in-out ml-10">
+      <div className="py-10 lg:py-20 flex flex-col max-lg:gap-10 lg:flex-row border-b border-gray-200/20">
+        <div className="flex-1 lg:border-r border-gray-200/20 flex items-start shrink-0 ">
+          <div className="flex flex-col gap-6 w-full lg:pr-20  transition-all duration-200 ease-in-out lg:ml-10">
             {noise.map((nois, index) => {
               return (
                 <div key={index}>
                   <div className=" flex items-start gap-8">
-                    <div className="size-14 font-oswald text-2xl flex items-center justify-center border border-gray-200 rounded-full">
+                    <div className="size-12 shrink-0 lg:size-14 font-oswald text-xl lg:text-2xl flex items-center justify-center border border-gray-200 rounded-full">
                       0{index + 1}
                     </div>
-                    <div className="flex flex-col gap-4">
-                      <div className="text-3xl font-light">{nois.title}</div>
+                    <div className="flex flex-col gap-3">
+                      <div className="text-2xl md:text-3xl font-light">
+                        {nois.title}
+                      </div>
                       <div className="text-gray-400">{nois.desc}</div>
                     </div>
                   </div>
                   {index + 1 !== noise.length && (
-                    <div className="w-full border border-gray-200/20"></div>
+                    <div className="w-full border border-gray-200/20 mt-8"></div>
                   )}
                 </div>
               );
             })}
           </div>
         </div>
-        <div className="flex flex-col pl-20 w-full gap-20 flex-1">
+        <div className="flex flex-col lg:pl-20 w-full gap-20 flex-1">
           <div className="">
             <div className="relative w-full h-[600px]">
               <div className="absolute inset-0 p-10 z-10 text-black font-oswald text-5xl flex flex-col gap-4 bg-sama-primary/15">
