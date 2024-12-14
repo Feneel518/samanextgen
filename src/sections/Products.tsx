@@ -1,4 +1,6 @@
 import Cards3d from "@/components/Cards3d";
+import Heading from "@/components/Heading";
+import Paragraph from "@/components/Paragraph";
 import ProductComponent from "@/components/ProductComponent";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
@@ -10,9 +12,19 @@ const Products: FC<ProductsProps> = ({}) => {
   return (
     <section className="px-8">
       <div className="flex flex-col md:flex-row py-10 lg:py-20  border-b border-gray-200/20">
-        <div className="lg:w-[450px] lg:border-r border-gray-200/20 flex  items-start max-lg:uppercase lg:text-6xl   shrink-0 max-lg:text-center">
-          What do we <br className="lg:flex hidden" />
-          have to offer
+        <div className="lg:w-[550px] lg:border-r border-gray-200/20 flex items-start lg:shrink-0 ">
+          <div className="flex flex-col gap-6 ">
+            <Heading className="w-[80%]">
+              <h1>What we have to offer.</h1>
+            </Heading>
+            <Paragraph>
+              <p className="lg:w-2/3 ">
+                Our solutions offer fast, accurate, and private on-device
+                performance, empowering brands to create unique, secure, and
+                highly efficient experiences.
+              </p>
+            </Paragraph>
+          </div>
         </div>
         <div className="flex flex-col mt-10 gap-5 pl-8 xl:hidden">
           <div className="flex flex-col xl:flex-row gap-5 ">

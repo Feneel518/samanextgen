@@ -1,15 +1,12 @@
 "use client";
 
-import Image from "next/image";
-import logoImage from "../../public/logo.png";
 import { SideMenuButton } from "@/components/SideMenuButton";
-import AnimatedBackground from "@/components/animate-background";
-import Link from "next/link";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import Orbit from "@/components/Orbit";
+import logoImage from "../../public/logo.png";
 
 const LINKS = [
   {
@@ -109,7 +106,7 @@ export const Header = () => {
         </div>
       </header>
       {isMobileOpen && (
-        <div className="fixed top-24 left-0 right-0 bottom-0 bg-gray-950 border border-gray-200/20">
+        <div className="fixed top-0 left-0 right-0 bottom-0 bg-gray-950 border border-gray-200/20 z-[1000]">
           <div className="container h-full">
             <nav className="flex flex-col items-center gap-4 py-8  h-full ">
               {LINKS.map((link) => {

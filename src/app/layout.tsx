@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Oswald, Poppins, Syne } from "next/font/google";
 import "./globals.css";
 import ScreenSize from "@/components/ScreenSize";
+import Header from "@/sections/Header";
+import Footer from "@/sections/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -31,7 +33,9 @@ export default function RootLayout({
         <div className="fixed bottom-8 left-8">
           <ScreenSize></ScreenSize>
         </div>
+        <Header></Header>
         {children}
+        <Footer></Footer>
       </body>
     </html>
   );

@@ -11,14 +11,13 @@ import WhyOffline from "@/sections/WhyOffline";
 export default function Home() {
   return (
     <>
-      <Header></Header>
       <Hero></Hero>
-      <Clients></Clients>
+      {/* <Clients></Clients> */}
       <Products></Products>
       <Offline></Offline>
       <UseCase></UseCase>
-      <WhyOffline></WhyOffline>
-      <Noise></Noise>
+      {/* <WhyOffline></WhyOffline> */}
+      {/* <Noise></Noise>  */}
     </>
   );
 }

@@ -1,3 +1,5 @@
+import Heading from "@/components/Heading";
+import Paragraph from "@/components/Paragraph";
 import ShinyButton from "@/components/ShinyButton";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
@@ -31,9 +33,9 @@ const Noise: FC<NoiseProps> = ({}) => {
   return (
     <section className="px-8">
       <div className="py-10 border-b border-gray-200/20">
-        <h1 className="text-5xl md:text-6xl font-oswald text-center">
-          Voice Optimization
-        </h1>
+        <Heading>
+          <h1 className="text-center">Voice Optimization</h1>
+        </Heading>
       </div>
       <div className="py-10 lg:py-20 flex flex-col max-lg:gap-10 lg:flex-row border-b border-gray-200/20">
         <div className="flex-1 lg:border-r border-gray-200/20 flex items-start shrink-0 ">
@@ -49,7 +51,9 @@ const Noise: FC<NoiseProps> = ({}) => {
                       <div className="text-2xl md:text-3xl font-light">
                         {nois.title}
                       </div>
-                      <div className="text-gray-400">{nois.desc}</div>
+                      <Paragraph>
+                        <div className=" ">{nois.desc}</div>
+                      </Paragraph>
                     </div>
                   </div>
                   {index + 1 !== noise.length && (
