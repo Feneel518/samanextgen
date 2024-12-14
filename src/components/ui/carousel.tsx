@@ -186,7 +186,7 @@ const Carousel = forwardRef<
         emblaMainApi.scrollNext();
         if (
           emblaMainApi.selectedScrollSnap() ===
-          emblaMainApi.scrollSnapList().length - 1
+          emblaMainApi.scrollSnapList().length
         ) {
           emblaMainApi.scrollTo(0);
         }

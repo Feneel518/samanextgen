@@ -12,8 +12,6 @@ import {
   SliderMainItem,
 } from "@/components/ui/carousel";
 import Waves from "@/components/Waves";
-import Autoplay from "embla-carousel-autoplay";
-import { section } from "framer-motion/client";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 
@@ -23,7 +21,7 @@ export const Hero = () => {
       <div className="border-b border-gray-200/20 pb-4">
         <Carousel
           autoplay={true}
-          autoplayInterval={7000}
+          autoplayInterval={10000}
           carouselOptions={{ loop: true }}
         >
           {/* <CarouselNext />
@@ -31,7 +29,7 @@ export const Hero = () => {
           {/* <div className="relative "> */}
           <CarouselMainContainer className="">
             {/* {Array.from({ length: 5 }).map((_, index) => ( */}
-            <SliderMainItem key={1} className="bg-transparent ">
+            <SliderMainItem className="bg-transparent ">
               <main className="grid lg:grid-cols-2 max-lg:gap-10  items-start  py-10 lg:py-20 xl:px-40 ">
                 <div className="flex flex-col gap-6 ">
                   <Heading className="">
@@ -82,7 +80,7 @@ export const Hero = () => {
                 </div>
               </main>
             </SliderMainItem>
-            <SliderMainItem key={2} className="bg-transparent">
+            <SliderMainItem className="bg-transparent">
               <div className="flex flex-col gap-10 py-20">
                 <Heading className="xl:px-80 text-center">
                   <h1>
@@ -154,7 +152,7 @@ export const Hero = () => {
                 </div>
               </div>
             </SliderMainItem>
-            <SliderMainItem key={3} className="bg-transparent">
+            <SliderMainItem className="bg-transparent">
               <div className="flex flex-col items-center gap-10 py-20">
                 <Heading className="xl:px-80 text-center">
                   <h1>The Future of Voice is Offline and Private</h1>
@@ -182,8 +180,6 @@ export const Hero = () => {
                 </div>
               </div>
             </SliderMainItem>
-
-            {/* ))} */}
           </CarouselMainContainer>
           <div className="absolute bottom-2 left-1/2 -translate-x-1/2">
             <CarouselThumbsContainer className="gap-x-1 ">
