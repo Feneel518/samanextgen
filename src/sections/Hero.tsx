@@ -6,16 +6,16 @@ import Image from "next/image";
 export const Hero = () => {
   return (
     <section className="px-8">
-      <main className="grid grid-cols-2  border-b border-gray-200/20 items-start  py-20">
+      <main className="grid lg:grid-cols-2 max-lg:gap-10 border-b border-gray-200/20 items-start  py-10 lg:py-20 ">
         <div className="">
           <div className="flex flex-col gap-8">
-            <h1 className="font-oswald text-7xl gray-grad">
+            <h1 className="font-oswald text-5xl lg:text-7xl gray-grad">
               Seamless <span className="brand-grad">Voice Control </span>
-              Without the <br />
+              Without the <br className="hidden lg:flex" />
               Internet
             </h1>
-            <div className="w-2/3 text-gray-400 flex flex-col ">
-              <p className="w-[80%] text-xl text-pretty">
+            <div className="lg:w-2/3 text-gray-400 flex flex-col ">
+              <p className="lg:w-[80%] text-xl text-pretty">
                 We set the benchmark in delivering flawless voice activation
                 across devices. Our offline voice solutions bring the benefits
                 of Edge AI to a wide range of products, enabling smarter and
@@ -27,31 +27,34 @@ export const Hero = () => {
             </ShinyButton>
           </div>
         </div>
-        <div className="relative h-[600px]">
-          <div className="absolute top-0 z-10 w-full h-full flex items-center justify-center gap-8 bg-black/30 backdrop-blur-[2px] ">
-            <div className="flex items-end gap-8">
-              <div className="mb-8">
-                <Waves></Waves>
-              </div>
-              <div className="relative size-96 ">
-                <Image
+        <div className="">
+          <div className="relative h-[400px] lg:h-[500px]">
+            <Image
+              src={"/heroImage3.png"}
+              alt="Hero Image"
+              fill
+              className="object-contain rounded-3xl"
+            ></Image>
+          </div>
+          <div className="flex items-center justify-center gap-8 w-full h-full lg:ml-4 max-lg:-mt-8">
+            <div className="">
+              <Waves></Waves>
+            </div>
+            <div className=" ">
+              <h1 className=" text-5xl lg:text-7xl font-oswald font-bold text-white max-lg:mb-4">
+                SAMA
+              </h1>
+              {/* <Image
                   src={"/NoInternet.png"}
                   alt="No Internet"
                   fill
                   className="object-contain"
-                ></Image>
-              </div>
-              <div className="mb-8">
-                <Waves></Waves>
-              </div>
+                ></Image> */}
+            </div>
+            <div className="">
+              <Waves></Waves>
             </div>
           </div>
-          <Image
-            src={"/heroImage1.png"}
-            alt="Hero Image"
-            fill
-            className="object-cover rounded-3xl blur-[1px]"
-          ></Image>
         </div>
       </main>
     </section>
