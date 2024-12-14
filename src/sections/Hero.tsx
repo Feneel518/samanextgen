@@ -22,8 +22,8 @@ export const Hero = () => {
     <section className="px-8">
       <div className="border-b border-gray-200/20 pb-4">
         <Carousel
-          // autoplay={true}
-          // autoplayInterval={7000}
+          autoplay={true}
+          autoplayInterval={7000}
           carouselOptions={{ loop: true }}
         >
           {/* <CarouselNext />

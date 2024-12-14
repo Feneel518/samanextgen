@@ -8,7 +8,7 @@ const Offline: FC<OfflineProps> = ({}) => {
   return (
     <section className="px-8">
       <div className="py-10 lg:py-20 flex flex-col-reverse gap-8 lg:flex-row border-b border-gray-200/20">
-        <div className="flex-1 grid grid-cols-2 items-center justify-center ml-60 ">
+        <div className="flex-1 grid grid-cols-2 items-center justify-center xl:ml-60 ">
           {Array.from({ length: 4 }).map((_, index) => (
             <div className="relative size-32 flex items-center justify-center">
               <Image
