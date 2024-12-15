@@ -399,7 +399,7 @@ const CarouselPrevious = forwardRef<
       disabled={!canScroll}
       {...props}
     >
-      <ChevronLeftIcon className="h-4 w-4" />
+      <ChevronLeftIcon className="h-4 w-4 text-black" />
       <span className="sr-only">Previous slide</span>
     </Button>
   );
@@ -436,7 +436,7 @@ const CarouselNext = forwardRef<
       disabled={!canScroll}
       {...props}
     >
-      <ChevronRightIcon className="h-4 w-4" />
+      <ChevronRightIcon className="h-4 w-4 text-black" />
       <span className="sr-only">Next slide</span>
     </Button>
   );
