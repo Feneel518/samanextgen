@@ -20,7 +20,16 @@ const ProductsDetails: FC<ProductsDetailsProps> = ({ product }) => {
             <div className="relative w-full h-[400px] ">
               <div className="absolute inset-0 p-10 z-10 text-black font-oswald text-5xl flex flex-col gap-4">
                 {/* <h1>{product.imageTitle}</h1> */}
-                <p className="text-xl ">{product.imageDesc}</p>
+                {/* <p className="text-xl ">{product.imageDesc}</p> */}
+                <div className="flex flex-col gap-8">
+                  {product.featurepoints.map((point, index) => {
+                    return (
+                      <Paragraph key={index}>
+                        <p className=" ">{point}</p>
+                      </Paragraph>
+                    );
+                  })}
+                </div>
               </div>
               <Image
                 src={product.image}
@@ -30,15 +39,6 @@ const ProductsDetails: FC<ProductsDetailsProps> = ({ product }) => {
               ></Image>
             </div>
 
-            <div className="flex flex-col gap-8">
-              {product.featurepoints.map((point, index) => {
-                return (
-                  <Paragraph key={index}>
-                    <p className=" ">{point}</p>
-                  </Paragraph>
-                );
-              })}
-            </div>
             {/* <ShinyButton href="/products" className="w-40 h-10">
               Get In Touch
             </ShinyButton> */}
