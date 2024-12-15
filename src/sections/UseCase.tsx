@@ -65,7 +65,7 @@ const UseCase: FC<UseCaseProps> = ({}) => {
           {/* <div className="w-full mx-auto border border-gray-200/20"></div> */}
           <div className="">
             <div className="relative aspect-[5/4] h-[600px]">
-              <div className="absolute inset-0 p-10 z-10 text-white font-oswald text-5xl flex flex-col gap-4 lg:justify-end">
+              <div className="absolute inset-0 p-10 z-10 text-white font-oswald text-5xl flex flex-col gap-4 ">
                 <h1> Accessory Voice Module</h1>
                 <p className="text-xl lg:w-1/2">
                   The Accessory Voice Module bridges traditional devices with
