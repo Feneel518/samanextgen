@@ -66,9 +66,9 @@ export const PRODUCTS = [
     imageDesc:
       "The SAMA Voice Module simplifies home control, appliance interactions smarter and more convenient.",
     featurepoints: [
-      "All-in-one solution",
-      "Advanced offline voice",
-      "Customizable experience",
+      "Offline Voice Processing",
+      "IR Learning Capability",
+      "Complimentary Mobile Application",
     ],
     components: [
       {
