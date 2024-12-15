@@ -106,7 +106,7 @@ export const Header = () => {
         </div>
       </header>
       {isMobileOpen && (
-        <div className="fixed top-0 left-0 right-0 bottom-0 bg-gray-950 border border-gray-200/20 z-[1000]">
+        <div className="fixed top-32 left-0 mx-8 right-0 bottom-0 bg-gray-950 border border-gray-200/20 z-[1000]">
           <div className="container h-full">
             <nav className="flex flex-col items-center gap-4 py-8  h-full ">
               {LINKS.map((link) => {

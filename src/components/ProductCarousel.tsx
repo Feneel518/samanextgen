@@ -38,7 +38,7 @@ const ProductCarousel: FC<ProductCarouselProps> = ({ productComponents }) => {
                 <Heading className="ml-16">
                   <h1>{comp.name}</h1>
                 </Heading>
-                <ol className="list-disc ml-16 flex flex-col gap-4">
+                <ol className="list-disc lg:ml-16 flex flex-col gap-4">
                   {comp.features.map((fea, inde) => {
                     return (
                       <li key={inde}>
