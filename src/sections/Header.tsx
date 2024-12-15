@@ -22,7 +22,7 @@ const LINKS = [
   {
     id: 4,
     name: "Applications",
-    link: "/use-cases",
+    link: "/applications",
   },
   {
     id: 2,

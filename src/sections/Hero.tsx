@@ -41,12 +41,10 @@ export const Hero = () => {
                       Internet
                     </h1>
                   </Heading>
-                  <Paragraph className="xl:w-2/3">
+                  <Paragraph className="">
                     <p className="xl:w-[80%] text-lg lg:text-xl text-pretty">
                       We set the benchmark in delivering flawless voice
-                      activation across devices. Our offline voice solutions
-                      bring the benefits of Edge AI to a wide range of products,
-                      enabling smarter and more responsive solutions
+                      activation across devices.
                     </p>
                   </Paragraph>
                   <ShinyButton className="lg:w-80 text-sama-background h-12">

@@ -10,8 +10,10 @@ const page: FC<pageProps> = ({}) => {
   return (
     <div className="">
       {/* <ProductHero></ProductHero> */}
-      {PRODUCTS.map((product) => {
-        return <ProductsDetails product={product}></ProductsDetails>;
+      {PRODUCTS.map((product, index) => {
+        return (
+          <ProductsDetails key={index} product={product}></ProductsDetails>
+        );
       })}
     </div>
   );
