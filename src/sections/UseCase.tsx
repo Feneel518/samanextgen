@@ -17,15 +17,17 @@ const UseCase: FC<UseCaseProps> = ({}) => {
           <div className="flex flex-col gap-6 lg:sticky lg:top-4 transition-all duration-200 ease-in-out">
             <Heading>
               <h1>
-                Featured <br />
-                Work
+                Our <br />
+                Products
               </h1>
             </Heading>
             <Paragraph>
               <p className="lg:w-2/3 ">
-                As a trusted ODM and system integrator, we empower smarter
-                living with Edge AI technology in speakers and voice-enabled
-                home appliances
+                SAMA is at the forefront of innovation, specializing in offline
+                voice applications. As a trusted ODM and system integrator, we
+                empower smarter living with Edge AI technology in speakers and
+                voice-enabled home appliances, delivering seamless functionality
+                and exceptional user&apos;experience.
               </p>
             </Paragraph>
             <ShinyButton className="w-40 h-10">Know More</ShinyButton>

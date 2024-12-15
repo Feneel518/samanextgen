@@ -14,7 +14,7 @@ const ProductComponent: FC<ProductComponentProps> = ({
   imageUrl,
 }) => {
   return (
-    <div className="flex">
+    <div className="flex w-full ">
       <div className="relative size-28 shrink-0">
         <Image
           src={imageUrl}
@@ -23,8 +23,8 @@ const ProductComponent: FC<ProductComponentProps> = ({
           className="object-contain"
         ></Image>
       </div>
-      <div className="flex flex-col gap-2">
-        <div className="flex items-center justify-between">
+      <div className="flex flex-col gap-2 w-full">
+        <div className="flex items-center justify-between w-full">
           <h1 className="text-2xl">{title}</h1>
           <p className="flex items-center gap-1 group cursor-pointer text-xs text-gray-400">
             See More{" "}

@@ -11,10 +11,10 @@ interface ProductsProps {}
 const Products: FC<ProductsProps> = ({}) => {
   return (
     <section className="px-8">
-      <div className="flex flex-col md:flex-row py-10 lg:py-20  border-b border-gray-200/20">
+      <div className="flex flex-col lg:flex-row py-10 lg:py-20  border-b border-gray-200/20">
         <div className="lg:w-[550px] lg:border-r border-gray-200/20 flex items-start lg:shrink-0 ">
           <div className="flex flex-col gap-6 ">
-            <Heading className="w-[80%]">
+            <Heading className="lg:w-[80%]">
               <h1>What we have to offer.</h1>
             </Heading>
             <Paragraph>
@@ -26,8 +26,8 @@ const Products: FC<ProductsProps> = ({}) => {
             </Paragraph>
           </div>
         </div>
-        <div className="flex flex-col mt-10 gap-5 pl-8 xl:hidden">
-          <div className="flex flex-col xl:flex-row gap-5 ">
+        <div className=" flex flex-col mt-10 gap-5 lg:pl-8 xl:hidden w-full">
+          <div className="flex flex-col w-full  gap-5">
             <ProductComponent
               imageUrl="/chip.png"
               title="Aster"
@@ -38,7 +38,7 @@ const Products: FC<ProductsProps> = ({}) => {
             <ProductComponent
               imageUrl="/chip.png"
               title="Bellis"
-              description="A simpler solution with single-mic, single-language recognition, optimized for noise compensation."
+              description="A simpler solution with dual-mic, dual-language recognition, optimized for noise compensation."
             ></ProductComponent>
             <div className="w-full h-[1px] xl:w-[1px] xl:h-full bg-gray-200/20"></div>
           </div>
@@ -53,7 +53,7 @@ const Products: FC<ProductsProps> = ({}) => {
             <ProductComponent
               imageUrl="/chip.png"
               title="Eruca"
-              description=" Simplify control of your devices with the SAMA Voice Module, turning IR appliances into voice-activated smart solutions."
+              description=" Simplify control of your devices with the SAMA Voice Module, turning IR appliances into smart solutions."
             ></ProductComponent>
           </div>
         </div>
