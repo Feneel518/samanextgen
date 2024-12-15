@@ -1,7 +1,7 @@
 export const PRODUCTS = [
   {
     name: "Integrated Voice Module",
-    mainHeading: "Integrated Voice Module: Smart voice control made simple.",
+    mainHeading: "Integrated Voice Module.",
     paragraph1:
       "The Integrated Voice Module is a versatile solution designed to bring smart voice control to your devices. Engineered for seamless integration, it enables voice-activated functionalities with robust processing capabilities, making everyday interactions effortless and intuitive.",
     paragraph2:

@@ -9,7 +9,7 @@ interface pageProps {}
 const page: FC<pageProps> = ({}) => {
   return (
     <div className="">
-      <ProductHero></ProductHero>
+      {/* <ProductHero></ProductHero> */}
       {PRODUCTS.map((product) => {
         return <ProductsDetails product={product}></ProductsDetails>;
       })}
