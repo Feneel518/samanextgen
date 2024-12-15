@@ -19,7 +19,7 @@ const ProductsDetails: FC<ProductsDetailsProps> = ({ product }) => {
           <div className="flex flex-col gap-6 lg:sticky lg:top-4 transition-all duration-200 ease-in-out w-full pr-8">
             <div className="relative w-full h-[400px] ">
               <div className="absolute inset-0 p-10 z-10 text-black font-oswald text-5xl flex flex-col gap-4">
-                <h1>{product.imageTitle}</h1>
+                {/* <h1>{product.imageTitle}</h1> */}
                 <p className="text-xl ">{product.imageDesc}</p>
               </div>
               <Image
