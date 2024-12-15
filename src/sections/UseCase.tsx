@@ -5,6 +5,7 @@ import Paragraph from "@/components/Paragraph";
 import ShinyButton from "@/components/ShinyButton";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { FC } from "react";
 
 interface UseCaseProps {}
@@ -41,17 +42,20 @@ const UseCase: FC<UseCaseProps> = ({}) => {
               <div className="absolute inset-0 p-10 z-10 text-black font-oswald text-5xl flex flex-col gap-4">
                 <h1>Integrated Voice Module</h1>
                 <p className="text-xl lg:w-1/2">
-                  The SAMA Voice Module simplifies home control, appliance
-                  interactions smarter and more convenient.
+                  The Integrated Voice Module enhances home automation, making
+                  appliance control smarter, effortless, and more reliable.
                 </p>
-                <p className="flex items-center gap-1 group cursor-pointer text-xs text-lack">
+                <Link
+                  href={"/products"}
+                  className="flex items-center gap-1 group cursor-pointer text-xs text-lack"
+                >
                   See More{" "}
                   <ArrowRight
                     strokeWidth={1}
                     size={20}
                     className="group-hover:translate-x-1 transition-transform ease-in-out duration-150"
                   ></ArrowRight>
-                </p>
+                </Link>
               </div>
               <Image
                 src={"/circuit.png"}
@@ -67,17 +71,21 @@ const UseCase: FC<UseCaseProps> = ({}) => {
               <div className="absolute inset-0 p-10 z-10 text-white font-oswald text-5xl flex flex-col gap-4 lg:justify-end">
                 <h1> Accessory Voice Module</h1>
                 <p className="text-xl lg:w-1/2">
-                  The SAMA Voice Module Gateway connects traditional devices to
-                  smart home features offline.
+                  The Accessory Voice Module bridges traditional devices with
+                  smart home capabilities, offering offline voice control, IR
+                  learning capability and seamless integration.
                 </p>
-                <p className="flex items-center gap-1 group cursor-pointer text-xs text-lack">
+                <Link
+                  href={"/products"}
+                  className="flex items-center gap-1 group cursor-pointer text-xs text-lack"
+                >
                   See More{" "}
                   <ArrowRight
                     strokeWidth={1}
                     size={20}
                     className="group-hover:translate-x-1 transition-transform ease-in-out duration-150"
                   ></ArrowRight>
-                </p>
+                </Link>
               </div>
               <Image
                 src={"/accessory.jpg"}

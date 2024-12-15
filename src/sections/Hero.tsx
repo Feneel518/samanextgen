@@ -14,6 +14,7 @@ import {
 import Waves from "@/components/Waves";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export const Hero = () => {
   return (
@@ -94,14 +95,17 @@ export const Hero = () => {
                       <h1 className="text-6xl xl:text-8xl font-oswald brand-grad">
                         Aster
                       </h1>
-                      <p className="flex items-center gap-1 group cursor-pointer text-xs text-gray-400">
+                      <Link
+                        href={"/products"}
+                        className="flex items-center gap-1 group cursor-pointer text-xs text-gray-400"
+                      >
                         Integrated Voice Module
                         <ArrowRight
                           strokeWidth={1}
                           size={20}
                           className="group-hover:translate-x-1 transition-transform ease-in-out duration-150"
                         ></ArrowRight>
-                      </p>
+                      </Link>
                     </aside>
                   </div>
                   <div className="border-b border-gray-200/20 p-8">
@@ -109,14 +113,17 @@ export const Hero = () => {
                       <h1 className="text-6xl xl:text-8xl font-oswald brand-grad ">
                         Bellis
                       </h1>
-                      <p className="flex items-center gap-1 group cursor-pointer text-xs text-gray-400">
+                      <Link
+                        href={"/products"}
+                        className="flex items-center gap-1 group cursor-pointer text-xs text-gray-400"
+                      >
                         Integrated Voice Module
                         <ArrowRight
                           strokeWidth={1}
                           size={20}
                           className="group-hover:translate-x-1 transition-transform ease-in-out duration-150"
                         ></ArrowRight>
-                      </p>
+                      </Link>
                     </aside>
                   </div>
                   <div className="xl:border-r max-xl:border-b p-8 border-gray-200/20">
@@ -124,14 +131,17 @@ export const Hero = () => {
                       <h1 className="text-6xl xl:text-8xl font-oswald brand-grad">
                         Dahlia
                       </h1>
-                      <p className="flex items-center gap-1 group cursor-pointer text-xs text-gray-400">
+                      <Link
+                        href={"/products"}
+                        className="flex items-center gap-1 group cursor-pointer text-xs text-gray-400"
+                      >
                         Integrated Voice Module
                         <ArrowRight
                           strokeWidth={1}
                           size={20}
                           className="group-hover:translate-x-1 transition-transform ease-in-out duration-150"
                         ></ArrowRight>
-                      </p>
+                      </Link>
                     </aside>
                   </div>
                   <div className="p-8">
@@ -139,14 +149,17 @@ export const Hero = () => {
                       <h1 className="text-6xl xl:text-8xl font-oswald brand-grad">
                         Eruca
                       </h1>
-                      <p className="flex items-center gap-1 group cursor-pointer text-xs text-gray-400">
+                      <Link
+                        href={"/products"}
+                        className="flex items-center gap-1 group cursor-pointer text-xs text-gray-400"
+                      >
                         Accessory Voice Module
                         <ArrowRight
                           strokeWidth={1}
                           size={20}
                           className="group-hover:translate-x-1 transition-transform ease-in-out duration-150"
                         ></ArrowRight>
-                      </p>
+                      </Link>
                     </aside>
                   </div>
                 </div>
