@@ -40,7 +40,7 @@ const UseCase: FC<UseCaseProps> = ({}) => {
                 <h1>Integrated Voice Module</h1>
                 <p className="text-xl lg:w-1/2">
                   The Integrated Voice Module enhances home automation, making
-                  appliance control smarter, effortless, and more reliable.
+                  appliance control smarter, effortless, and more reliable.
                 </p>
                 <Link
                   href={"/products"}
@@ -70,7 +70,7 @@ const UseCase: FC<UseCaseProps> = ({}) => {
                 <p className="text-xl lg:w-1/2">
                   The Accessory Voice Module bridges traditional devices with
                   smart home capabilities, offering offline voice control, IR
-                  learning capability and seamless integration.
+                  learning capability and seamless integration.
                 </p>
                 <Link
                   href={"/products"}
