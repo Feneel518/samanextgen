@@ -95,7 +95,7 @@ export const Hero = () => {
                         Aster
                       </h1>
                       <p className="flex items-center gap-1 group cursor-pointer text-xs text-gray-400">
-                        See More{" "}
+                        Integrated Voice Module
                         <ArrowRight
                           strokeWidth={1}
                           size={20}
@@ -110,7 +110,7 @@ export const Hero = () => {
                         Bellis
                       </h1>
                       <p className="flex items-center gap-1 group cursor-pointer text-xs text-gray-400">
-                        See More{" "}
+                        Integrated Voice Module
                         <ArrowRight
                           strokeWidth={1}
                           size={20}
@@ -125,7 +125,7 @@ export const Hero = () => {
                         Dahlia
                       </h1>
                       <p className="flex items-center gap-1 group cursor-pointer text-xs text-gray-400">
-                        See More{" "}
+                        Integrated Voice Module
                         <ArrowRight
                           strokeWidth={1}
                           size={20}
@@ -140,7 +140,7 @@ export const Hero = () => {
                         Eruca
                       </h1>
                       <p className="flex items-center gap-1 group cursor-pointer text-xs text-gray-400">
-                        See More{" "}
+                        Accessory Voice Module
                         <ArrowRight
                           strokeWidth={1}
                           size={20}
