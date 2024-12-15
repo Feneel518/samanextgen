@@ -24,7 +24,7 @@ const ProductsDetails: FC<ProductsDetailsProps> = ({ product }) => {
               {product.featurepoints.map((point, index) => {
                 return (
                   <Paragraph key={index}>
-                    <p className="lg:w-2/3 ">{point}</p>
+                    <p className=" ">{point}</p>
                   </Paragraph>
                 );
               })}
