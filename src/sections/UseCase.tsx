@@ -13,17 +13,14 @@ interface UseCaseProps {}
 const UseCase: FC<UseCaseProps> = ({}) => {
   return (
     <section className="px-8">
-      <div className="py-20 flex flex-col lg:flex-row gap-10 border-b border-gray-200/20">
-        <div className="lg:w-[550px] lg:border-r border-gray-200/20 flex items-start lg:shrink-0 ">
-          <div className="flex flex-col gap-6 lg:sticky lg:top-4 transition-all duration-200 ease-in-out">
+      <div className="py-20 flex flex-col items-center justify-center  gap-10 border-b border-gray-200/20">
+        <div className="  pb-8 border-gray-200/20 flex items-start lg:shrink-0 ">
+          <div className="flex flex-col items-center justify-center gap-6 lg:sticky lg:top-4 transition-all duration-200 ease-in-out">
             <Heading>
-              <h1>
-                Our <br />
-                Products
-              </h1>
+              <h1>Our Products</h1>
             </Heading>
             <Paragraph>
-              <p className="lg:w-2/3 ">
+              <p className=" w-1/2 mx-auto text-center ">
                 SAMA is at the forefront of innovation, specializing in offline
                 voice applications. As a trusted ODM and system integrator, we
                 empower smarter living with Edge AI technology in speakers and
@@ -36,9 +33,9 @@ const UseCase: FC<UseCaseProps> = ({}) => {
             </ShinyButton>
           </div>
         </div>
-        <div className="flex flex-col lg:pl-20 w-full gap-20">
-          <div className="">
-            <div className="relative w-full h-[600px] ">
+        <div className="flex  items-center justify-center lg:pl-20 w-full gap-10">
+          <div className="pr-10 border-r border-gray-200/20">
+            <div className="relative flex-1 aspect-[5/4] h-[600px] ">
               <div className="absolute inset-0 p-10 z-10 text-black font-oswald text-5xl flex flex-col gap-4">
                 <h1>Integrated Voice Module</h1>
                 <p className="text-xl lg:w-1/2">
@@ -65,9 +62,9 @@ const UseCase: FC<UseCaseProps> = ({}) => {
               ></Image>
             </div>
           </div>
-          <div className="w-full mx-auto border border-gray-200/20"></div>
+          {/* <div className="w-full mx-auto border border-gray-200/20"></div> */}
           <div className="">
-            <div className="relative w-full h-[600px]">
+            <div className="relative aspect-[5/4] h-[600px]">
               <div className="absolute inset-0 p-10 z-10 text-white font-oswald text-5xl flex flex-col gap-4 lg:justify-end">
                 <h1> Accessory Voice Module</h1>
                 <p className="text-xl lg:w-1/2">

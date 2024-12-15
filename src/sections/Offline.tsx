@@ -19,15 +19,13 @@ const Offline: FC<OfflineProps> = ({}) => {
             ></Image>
           </div>
         </div>
-        <div className="lg:w-[750px] lg:border-l border-gray-200/20 lg:ml-5 lg:pl-8 flex flex-col ">
+        <div className="lg:w-[850px] lg:border-l border-gray-200/20 lg:ml-5 lg:p-24 flex flex-col ">
           <Heading className="">
             <div className="max-lg:text-center shrink-0   ">
-              Enabling Voice and AI application
+              Enabling Voice and AI application with unique embedded hardware
+              and software solutions.
             </div>
           </Heading>
-          <Paragraph className="max-lg:text-center">
-            with unique embedded hardware and software solutions.
-          </Paragraph>
         </div>
       </div>
     </section>
