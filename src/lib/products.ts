@@ -1,6 +1,6 @@
 export const PRODUCTS = [
   {
-    name: "Integrated Voice Module",
+    name: "Voice assistance Unplugged!",
     mainHeading: "Integrated Voice Module.",
     paragraph1:
       "The Integrated Voice Module is a versatile solution designed to bring smart voice control to your devices. Engineered for seamless integration, it enables voice-activated functionalities with robust processing capabilities, making everyday interactions effortless and intuitive.",
@@ -55,7 +55,7 @@ export const PRODUCTS = [
     ],
   },
   {
-    name: "Integrated Voice Module",
+    name: "Your voice can help you!",
     mainHeading: "Accessory Voice Module.",
     paragraph1:
       "The Accessory Voice Module is a versatile, all-in-one solution designed to simplify and modernize the way you interact with IR-enabled devices. With advanced offline voice recognition and seamless mobile application integration, it eliminates the need for handheld remotes while delivering a customizable experience tailored to your needs.",
