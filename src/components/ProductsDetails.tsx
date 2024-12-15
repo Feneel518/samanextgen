@@ -6,6 +6,7 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import ProductCarousel from "./ProductCarousel";
 import { ProductType } from "@/lib/products";
+import { cn } from "@/lib/utils";
 
 interface ProductsDetailsProps {
   product: ProductType;
@@ -18,14 +19,29 @@ const ProductsDetails: FC<ProductsDetailsProps> = ({ product }) => {
         <div className="lg:w-[550px] lg:border-r border-gray-200/20 flex items-start lg:shrink-0 ">
           <div className="flex flex-col gap-6 lg:sticky lg:top-4 transition-all duration-200 ease-in-out w-full pr-8">
             <div className="relative w-full h-[400px] ">
-              <div className="absolute inset-0 p-10 z-10 text-black font-oswald text-5xl flex flex-col gap-4">
+              <div
+                className={cn(
+                  "absolute inset-0 p-10 z-10 text-black font-oswald text-5xl flex flex-col gap-4",
+                  {
+                    "justify-end text-white":
+                      product.mainHeading === "Accessory Voice Module.",
+                  }
+                )}
+              >
                 {/* <h1>{product.imageTitle}</h1> */}
                 {/* <p className="text-xl ">{product.imageDesc}</p> */}
-                <div className="flex flex-col gap-8">
+                <div className="flex flex-col gap-3">
                   {product.featurepoints.map((point, index) => {
                     return (
                       <Paragraph key={index}>
-                        <p className=" text-black">{point}</p>
+                        <p
+                          className={cn("text-black", {
+                            " text-white":
+                              product.mainHeading === "Accessory Voice Module.",
+                          })}
+                        >
+                          {point}
+                        </p>
                       </Paragraph>
                     );
                   })}

@@ -54,6 +54,40 @@ export const PRODUCTS = [
       },
     ],
   },
+  {
+    name: "Integrated Voice Module",
+    mainHeading: "Accessory Voice Module.",
+    paragraph1:
+      "The Accessory Voice Module is a versatile, all-in-one solution designed to simplify and modernize the way you interact with IR-enabled devices. With advanced offline voice recognition and seamless mobile application integration, it eliminates the need for handheld remotes while delivering a customizable experience tailored to your needs.",
+    paragraph2:
+      "The Accessory Voice Module brings offline voice processing to control IR-enabled devices such as ACs, TVs, fans, and lights effortlessly through voice commands or a mobile application. With support for OTA updates and single-language recognition, it also offers the flexibility to select multiple languages to suit diverse requirements. Its mobile application allows comprehensive control over connected devices, including playback and streaming functionality for speakers, which can be designed to integrate Bluetooth and Wi-Fi audio streaming. Equipped with two PDM microphones for superior voice recognition and active gain control, the module ensures reliable performance in various environments. Perfect for IoT integration, this module is highly customizable to meet the unique demands of your business.",
+    image: "/accessory.jpg",
+    imageTitle: "Integrated Voice Module",
+    imageDesc:
+      "The SAMA Voice Module simplifies home control, appliance interactions smarter and more convenient.",
+    featurepoints: [
+      "All-in-one solution",
+      "Advanced offline voice",
+      "Customizable experience",
+    ],
+    components: [
+      {
+        name: "Eruca",
+        features: [
+          "Offline voice processing to control IR-enabled devices like ACs, TVs, fans, and lights",
+          "Simple voice command control or mobile app integration",
+          "Single-language support with an option for multiple languages",
+          "Over-the-Air (OTA) updates for continuous improvements",
+          "Can be integrated into IoT devices like speakers with Bluetooth and Wi-Fi audio streaming",
+          "Voice control for playback functions in IoT devices",
+          "Equipped with two PDM microphones for clear voice capture",
+          "Active gain control and advanced noise suppression for superior voice recognition",
+          "Customizable to meet specific business needs",
+          "Redefines convenience and functionality for connected devices",
+        ],
+      },
+    ],
+  },
 ];
 
 const components = [

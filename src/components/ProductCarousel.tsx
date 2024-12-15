@@ -152,7 +152,7 @@ const ProductCarousel: FC<ProductCarouselProps> = ({ productComponents }) => {
       </CarouselMainContainer>
       <div className="absolute -bottom-8 left-1/2 -translate-x-1/2">
         <CarouselThumbsContainer className="gap-x-1 ">
-          {Array.from({ length: 3 }).map((_, index) => (
+          {productComponents.map((_, index) => (
             <CarouselIndicator key={index} index={index} />
           ))}
         </CarouselThumbsContainer>
