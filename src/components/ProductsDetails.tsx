@@ -71,19 +71,26 @@ const ProductsDetails: FC<ProductsDetailsProps> = ({ product }) => {
               <h1>{product.mainHeading}</h1>
             </Heading>
             <div className="grid grid-cols-1">
-              {/* <Paragraph>
-                <p>{product.paragraph1}</p>
-              </Paragraph> */}
               <Paragraph>
-                <p>{product.paragraph2}</p>
+                <p>{product.paragraph1}</p>
               </Paragraph>
+              {/* <Paragraph>
+              <p>{product.paragraph2}</p>
+            </Paragraph> */}
             </div>
           </div>
 
           <ProductCarousel
             productComponents={product.components}
           ></ProductCarousel>
-
+          <div className="grid grid-cols-1">
+            {/* <Paragraph>
+                <p>{product.paragraph1}</p>
+              </Paragraph> */}
+            <Paragraph>
+              <p>{product.paragraph2}</p>
+            </Paragraph>
+          </div>
           <div className="w-full mx-auto border border-gray-200/20"></div>
         </div>
       </div>
