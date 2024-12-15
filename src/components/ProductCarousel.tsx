@@ -22,8 +22,12 @@ interface ProductCarouselProps {
 const ProductCarousel: FC<ProductCarouselProps> = ({ productComponents }) => {
   return (
     <Carousel carouselOptions={{ loop: true }}>
-      <CarouselNext />
-      <CarouselPrevious />
+      {productComponents.length > 1 && (
+        <>
+          <CarouselNext />
+          <CarouselPrevious />
+        </>
+      )}
       {/* <div className="relative "> */}
       <CarouselMainContainer className="">
         {/* {Array.from({ length: 5 }).map((_, index) => ( */}
@@ -150,14 +154,16 @@ const ProductCarousel: FC<ProductCarouselProps> = ({ productComponents }) => {
           </div>
         </SliderMainItem> */}
       </CarouselMainContainer>
-      <div className="absolute -bottom-8 left-1/2 -translate-x-1/2">
-        <CarouselThumbsContainer className="gap-x-1 ">
-          {productComponents.map((_, index) => (
-            <CarouselIndicator key={index} index={index} />
-          ))}
-        </CarouselThumbsContainer>
-        {/* </div> */}
-      </div>
+      {productComponents.length > 1 && (
+        <div className="absolute -bottom-8 left-1/2 -translate-x-1/2">
+          <CarouselThumbsContainer className="gap-x-1 ">
+            {productComponents.map((_, index) => (
+              <CarouselIndicator key={index} index={index} />
+            ))}
+          </CarouselThumbsContainer>
+          {/* </div> */}
+        </div>
+      )}
     </Carousel>
   );
 };
