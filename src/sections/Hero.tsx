@@ -31,7 +31,7 @@ export const Hero = () => {
           <CarouselMainContainer className="">
             {/* {Array.from({ length: 5 }).map((_, index) => ( */}
             <SliderMainItem className="bg-transparent ">
-              <main className="grid lg:grid-cols-2 max-lg:gap-10  items-start  py-10 lg:py-20 xl:px-40 ">
+              <main className="grid lg:grid-cols-2 max-lg:gap-10  items-center  py-10 lg:py-20 xl:px-40 ">
                 <div className="flex flex-col gap-6 ">
                   <Heading className="">
                     <h1>
