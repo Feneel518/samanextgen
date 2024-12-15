@@ -30,7 +30,9 @@ const UseCase: FC<UseCaseProps> = ({}) => {
                 and exceptional user&apos;experience.
               </p>
             </Paragraph>
-            <ShinyButton className="w-40 h-10">Know More</ShinyButton>
+            <ShinyButton href="/products" className="w-40 h-10">
+              Know More
+            </ShinyButton>
           </div>
         </div>
         <div className="flex flex-col lg:pl-20 w-full gap-20">

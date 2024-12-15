@@ -11,7 +11,7 @@ const ProductHero: FC<ProductHeroProps> = ({}) => {
         <div className="">
           <Heading className="">
             <h1 className="text-8xl">
-              We create your <br /> brand together
+              Transforming Ideas <br /> into Reality.
             </h1>
           </Heading>
         </div>
