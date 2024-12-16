@@ -353,15 +353,16 @@ const CarouselIndicator = forwardRef<
       ref={ref}
       size="icon"
       className={cn(
-        "h-2 w-6 rounded-full",
-        "data-[active='false']:bg-white/50 data-[active='true']:bg-white",
+        "h-6 w-6 rounded-full bg-transparent",
+        "data-[active='false']:text-white/50 data-[active='true']:text-white",
         className
       )}
       data-active={isSlideActive}
       onClick={() => onThumbClick(index)}
       {...props}
     >
-      <span className="sr-only">slide {index + 1} </span>
+      {index + 1}
+      {/* <span className="sr-only">slide {index + 1} </span> */}
     </Button>
   );
 });
@@ -389,7 +390,8 @@ const CarouselPrevious = forwardRef<
       variant={variant}
       size={size}
       className={cn(
-        "absolute h-6 w-6 rounded-full z-10",
+        "absolute h-10 w-10 rounded-full z-10",
+
         orientation === "vertical"
           ? "-top-2 left-1/2 -translate-x-1/2 rotate-90"
           : "-left-2 top-1/2 -translate-y-1/2",
@@ -399,7 +401,7 @@ const CarouselPrevious = forwardRef<
       disabled={!canScroll}
       {...props}
     >
-      <ChevronLeftIcon className="h-4 w-4 text-black" />
+      <ChevronLeftIcon className="h-8 w-8 text-black" />
       <span className="sr-only">Previous slide</span>
     </Button>
   );
@@ -426,7 +428,7 @@ const CarouselNext = forwardRef<
       variant={variant}
       size={size}
       className={cn(
-        "absolute h-6 w-6 rounded-full z-10",
+        "absolute h-10 w-10 rounded-full z-10",
         orientation === "vertical"
           ? "-bottom-2 left-1/2 -translate-x-1/2 rotate-90"
           : "-right-2 top-1/2 -translate-y-1/2",
@@ -436,7 +438,7 @@ const CarouselNext = forwardRef<
       disabled={!canScroll}
       {...props}
     >
-      <ChevronRightIcon className="h-4 w-4 text-black" />
+      <ChevronRightIcon className="h-8 w-8 text-black" />
       <span className="sr-only">Next slide</span>
     </Button>
   );

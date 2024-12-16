@@ -11,7 +11,7 @@ const Offline: FC<OfflineProps> = ({}) => {
       <div className="py-10 lg:py-20 grid lg:grid-cols-2 gap-8 lg:flex-row border-b  border-gray-200/20 ">
         <div className="relative w-[500px] xl:w-[600px] aspect-square mx-auto max-lg:order-2 ">
           <Image
-            src={"/offline2.png"}
+            src={"/offline3.png"}
             alt="offline"
             fill
             className="object-contain"

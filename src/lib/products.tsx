@@ -33,10 +33,8 @@ export const PRODUCTS = [
             for precise voice control
           </>,
           <>
-            <span className="underline underline-offset-4">
-              Ideal for integration
-            </span>{" "}
-            into existing appliances like fans{" "}
+            Ideal for integration into existing appliances like{" "}
+            <span className="underline underline-offset-4">fans </span>{" "}
           </>,
           <>
             Supports seamless communication via{" "}
@@ -150,10 +148,9 @@ export const PRODUCTS = [
             </span>
           </>,
           <>
-            Transforms appliances like fans into{" "}
-            <span className="underline underline-offset-4">
-              intelligent systems
-            </span>
+            Transforms appliances like{" "}
+            <span className="underline underline-offset-4">fans</span> into
+            intelligent systems
           </>,
           <>
             <span className="underline underline-offset-4">Premium voice</span>{" "}
@@ -260,7 +257,7 @@ export const PRODUCTS = [
           <>
             Utilizes{" "}
             <span className="underline underline-offset-4">
-              GC(Active Gain Control), AEC (Acoustic Echo Cancellation), VNR
+              AGC(Active Gain Control), AEC (Acoustic Echo Cancellation), VNR
               (Voice to Noise Ratio Estimator), and NS (Noise Suppression)
             </span>{" "}
             for enhanced voice clarity in noisy environments.
