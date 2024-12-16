@@ -19,23 +19,77 @@ const UseCase: FC<UseCaseProps> = ({}) => {
             <Heading>
               <h1>Our Products</h1>
             </Heading>
-            <Paragraph>
-              <p className=" w-1/2 mx-auto text-center ">
-                SAMA is at the forefront of innovation, specializing in offline
-                voice applications. As a trusted ODM and system integrator, we
-                empower smarter living with Edge AI technology in speakers and
-                voice-enabled home appliances, delivering seamless functionality
-                and exceptional user&apos;experience.
-              </p>
-            </Paragraph>
-            <ShinyButton href="/products" className="w-40 h-10">
+
+            {/* <ShinyButton href="/products" className="w-40 h-10">
               Know More
-            </ShinyButton>
+            </ShinyButton> */}
           </div>
         </div>
-        <div className="flex  items-center justify-center lg:pl-20 w-full gap-10">
-          <div className="pr-10 border-r border-gray-200/20">
-            <div className="relative flex-1 aspect-[5/4] h-[600px] ">
+        <div className="grid xl:grid-cols-2 items-center justify-center max-xl:divide-y-2 xl:divide-x-2 divide-gray-200/20  w-full">
+          <div className="p-8 w-full">
+            <div className="relative xl:w-full xl:aspect-[5/4] w-[400px] max-xl:h-[650px]  sm:w-[550px]">
+              <div className="absolute inset-0 p-10 z-10 text-black font-oswald text-5xl flex flex-col gap-4">
+                <h1>Integrated Voice Module</h1>
+                <p className="text-xl xl:w-1/2">
+                  The Integrated Voice Module is a solution that transforms
+                  traditional home appliances into smart devices, offering
+                  seamless control and enhanced convenience through offline
+                  voice processing.
+                </p>
+                <Link
+                  href={"/products"}
+                  className="flex items-center gap-1 group cursor-pointer text-xs text-lack"
+                >
+                  See More{" "}
+                  <ArrowRight
+                    strokeWidth={1}
+                    size={20}
+                    className="group-hover:translate-x-1 transition-transform ease-in-out duration-150"
+                  ></ArrowRight>
+                </Link>
+              </div>
+              <Image
+                src={"/circuit.png"}
+                alt="Integrated Voice Module"
+                fill
+                className="object-cover object-bottom rounded-3xl"
+              ></Image>
+            </div>
+          </div>
+          <div className="p-8 w-full">
+            <div className="relative xl:w-full xl:aspect-[5/4] w-[400px] max-xl:h-[650px]  sm:w-[550px]">
+              <div className="absolute inset-0 p-10 z-10 text-white font-oswald text-5xl flex flex-col gap-4 ">
+                <h1> Accessory Voice Module</h1>
+                <p className="text-xl xl:w-1/2">
+                  he Accessory Voice Module eliminates handheld remote chaos by
+                  enabling offline voice control for IR devices like ACs, TVs,
+                  and lights. It features microphones, OTA updates, multilingual
+                  support, Mobile Application and seamless device integration.
+                </p>
+                <Link
+                  href={"/products?section=avm"}
+                  className="flex items-center gap-1 group cursor-pointer text-xs text-lack"
+                >
+                  See More{" "}
+                  <ArrowRight
+                    strokeWidth={1}
+                    size={20}
+                    className="group-hover:translate-x-1 transition-transform ease-in-out duration-150"
+                  ></ArrowRight>
+                </Link>
+              </div>
+              <Image
+                src={"/accessory1.png"}
+                alt="Integrated Voice Module"
+                fill
+                className="object-cover object-bottom rounded-3xl"
+              ></Image>
+            </div>
+          </div>
+        </div>
+        {/* <div className="flex xl:flex-row flex-col items-center justify-center lg:pl-20 w-full gap-10">
+          <div className="xl:pr-10 xl:border-r border-gray-200/20">
+            <div className="relative flex-1 xl:aspect-[5/4] h-[650px] w-[450px] sm:w-[650px] md:w-[800px] xl:h-[550px] xl:w-[650px] ">
               <div className="absolute inset-0 p-10 z-10 text-black font-oswald text-5xl flex flex-col gap-4">
                 <h1>Integrated Voice Module</h1>
                 <p className="text-xl lg:w-1/2">
@@ -64,9 +118,9 @@ const UseCase: FC<UseCaseProps> = ({}) => {
               ></Image>
             </div>
           </div>
-          {/* <div className="w-full mx-auto border border-gray-200/20"></div> */}
+
           <div className="">
-            <div className="relative aspect-[5/4] h-[600px]">
+            <div className="relative aspect-[5/4]  h-[650px] w-[450px] sm:w-[650px] md:w-[800px] xl:h-[550px] xl:w-[650px]">
               <div className="absolute inset-0 p-10 z-10 text-white font-oswald text-5xl flex flex-col gap-4 ">
                 <h1> Accessory Voice Module</h1>
                 <p className="text-xl lg:w-1/2">
@@ -76,7 +130,7 @@ const UseCase: FC<UseCaseProps> = ({}) => {
                   support, Mobile Application and seamless device integration.
                 </p>
                 <Link
-                  href={"/products"}
+                  href={"/products?section=avm"}
                   className="flex items-center gap-1 group cursor-pointer text-xs text-lack"
                 >
                   See More{" "}
@@ -88,13 +142,24 @@ const UseCase: FC<UseCaseProps> = ({}) => {
                 </Link>
               </div>
               <Image
-                src={"/accessory.jpg"}
+                src={"/accessory1.png"}
                 alt="Integrated Voice Module"
                 fill
                 className="object-cover object-bottom  rounded-3xl"
               ></Image>
             </div>
           </div>
+        </div> */}
+        <div className="mt-8">
+          <Paragraph>
+            <p className=" w-1/2 mx-auto text-center ">
+              SAMA NextGen is at the forefront of innovation, specializing in
+              offline voice applications. As a trusted ODM and system
+              integrator, we empower smarter living with Edge AI technology in
+              speakers and voice-enabled home appliances, delivering seamless
+              functionality and exceptional user&apos;experience.
+            </p>
+          </Paragraph>
         </div>
       </div>
     </section>

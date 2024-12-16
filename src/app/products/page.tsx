@@ -1,18 +1,40 @@
+"use client";
+
 import ProductsDetails from "@/components/ProductsDetails";
 import { PRODUCTS } from "@/lib/products";
 import ProductHero from "@/sections/ProductHero";
 import UseCase from "@/sections/UseCase";
-import { FC } from "react";
+import { FC, useEffect } from "react";
 
-interface pageProps {}
+interface pageProps {
+  searchParams: {
+    section: string;
+  };
+}
 
-const page: FC<pageProps> = ({}) => {
+const page: FC<pageProps> = ({ searchParams }) => {
+  console.log(searchParams);
+
+  useEffect(() => {
+    const scrolltoHash = function (element_id: string) {
+      const element = document.getElementById(element_id);
+      element?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+    };
+    scrolltoHash(searchParams.section);
+  }, [searchParams, searchParams.section]);
+
   return (
     <div className="">
       {/* <ProductHero></ProductHero> */}
       {PRODUCTS.map((product, index) => {
         return (
-          <ProductsDetails key={index} product={product}></ProductsDetails>
+          <section key={index} id={product.id}>
+            <ProductsDetails product={product}></ProductsDetails>
+          </section>
         );
       })}
     </div>

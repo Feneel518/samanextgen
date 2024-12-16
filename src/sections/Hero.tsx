@@ -88,7 +88,7 @@ export const Hero = () => {
                   </h1>
                 </Heading>
                 <div className="grid grid-cols-1 lg:grid-cols-2 xl:px-[200px] ">
-                  <div className="xl:border-r border-b p-8 border-gray-200/20">
+                  <div className="lg:border-r border-b p-8 border-gray-200/20">
                     <aside className="flex flex-col justify-center items-center h-full">
                       <h1 className="text-6xl xl:text-8xl font-oswald brand-grad">
                         Aster
@@ -124,7 +124,7 @@ export const Hero = () => {
                       </Link>
                     </aside>
                   </div>
-                  <div className="xl:border-r max-xl:border-b p-8 border-gray-200/20">
+                  <div className="lg:border-r max-lg:border-b p-8 border-gray-200/20">
                     <aside className="flex flex-col justify-center items-center h-full">
                       <h1 className="text-6xl xl:text-8xl font-oswald brand-grad">
                         Dahlia
