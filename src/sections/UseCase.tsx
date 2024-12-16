@@ -61,7 +61,7 @@ const UseCase: FC<UseCaseProps> = ({}) => {
               <div className="absolute inset-0 p-10 z-10 text-white font-oswald text-5xl flex flex-col gap-4 ">
                 <h1> Accessory Voice Module</h1>
                 <p className="text-xl xl:w-1/2">
-                  he Accessory Voice Module eliminates handheld remote chaos by
+                  The Accessory Voice Module eliminates handheld remote chaos by
                   enabling offline voice control for IR devices like ACs, TVs,
                   and lights. It features microphones, OTA updates, multilingual
                   support, Mobile Application and seamless device integration.
@@ -157,7 +157,7 @@ const UseCase: FC<UseCaseProps> = ({}) => {
               offline voice applications. As a trusted ODM and system
               integrator, we empower smarter living with Edge AI technology in
               speakers and voice-enabled home appliances, delivering seamless
-              functionality and exceptional user&apos;experience.
+              functionality and exceptional user&apos;s experience.
             </p>
           </Paragraph>
         </div>
