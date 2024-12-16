@@ -21,8 +21,8 @@ export const Hero = () => {
     <section className="px-8">
       <div className="border-b border-gray-200/20 pb-4">
         <Carousel
-          autoplay={true}
-          autoplayInterval={10000}
+          // autoplay={true}
+          // autoplayInterval={10000}
           carouselOptions={{ loop: true }}
         >
           {/* <CarouselNext />
@@ -54,27 +54,37 @@ export const Hero = () => {
 
                 <div className="max-lg:-mt-8">
                   <div className="relative h-[400px] lg:h-[500px]">
+                    <div className="absolute w-full h-full z-10 mt-72 ">
+                      {/* <div className="absolute top-0 w-[70%]   h-full -mt-36 ml-28">
+                        <Image
+                          src={"/heroIcons.png"}
+                          alt="icons"
+                          fill
+                          className="object-contain"
+                        ></Image>
+                      </div> */}
+                      <div className="flex items-center justify-center gap-8 w-full h-full ">
+                        <div className="">
+                          <Waves></Waves>
+                        </div>
+                        <div className=" ">
+                          <Heading>
+                            <h1 className=" text-5xl lg:text-7xl font-oswald font-bold text-white max-lg:mb-4">
+                              SAMA
+                            </h1>
+                          </Heading>
+                        </div>
+                        <div className="">
+                          <Waves></Waves>
+                        </div>
+                      </div>
+                    </div>
                     <Image
-                      src={"/heroImage3.png"}
+                      src={"/heroImage.jpg"}
                       alt="Hero Image"
                       fill
-                      className="object-contain rounded-3xl"
+                      className="object-cover rounded-3xl"
                     ></Image>
-                  </div>
-                  <div className="flex items-center justify-center gap-8 w-full h-full lg:ml-4 max-sm:-mt-8">
-                    <div className="">
-                      <Waves></Waves>
-                    </div>
-                    <div className=" ">
-                      <Heading>
-                        <h1 className=" text-5xl lg:text-7xl font-oswald font-bold text-white max-lg:mb-4">
-                          SAMA
-                        </h1>
-                      </Heading>
-                    </div>
-                    <div className="">
-                      <Waves></Waves>
-                    </div>
                   </div>
                 </div>
               </main>
@@ -95,7 +105,7 @@ export const Hero = () => {
                       </h1>
                       <Link
                         href={"/products"}
-                        className="flex items-center gap-1 group cursor-pointer text-xs text-gray-400"
+                        className="flex items-center gap-1 group cursor-pointer text-sm text-gray-400"
                       >
                         Integrated Voice Module
                         <ArrowRight
@@ -113,7 +123,7 @@ export const Hero = () => {
                       </h1>
                       <Link
                         href={"/products"}
-                        className="flex items-center gap-1 group cursor-pointer text-xs text-gray-400"
+                        className="flex items-center gap-1 group cursor-pointer text-sm text-gray-400"
                       >
                         Integrated Voice Module
                         <ArrowRight
@@ -131,7 +141,7 @@ export const Hero = () => {
                       </h1>
                       <Link
                         href={"/products"}
-                        className="flex items-center gap-1 group cursor-pointer text-xs text-gray-400"
+                        className="flex items-center gap-1 group cursor-pointer text-sm text-gray-400"
                       >
                         Integrated Voice Module
                         <ArrowRight
@@ -149,7 +159,7 @@ export const Hero = () => {
                       </h1>
                       <Link
                         href={"/products"}
-                        className="flex items-center gap-1 group cursor-pointer text-xs text-gray-400"
+                        className="flex items-center gap-1 group cursor-pointer text-sm text-gray-400"
                       >
                         Accessory Voice Module
                         <ArrowRight

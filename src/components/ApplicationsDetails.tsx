@@ -3,7 +3,6 @@ import Heading from "./Heading";
 import Paragraph from "./Paragraph";
 import Image from "next/image";
 import { ApplicationType } from "@/lib/applications";
-import { cn } from "@/lib/utils";
 
 interface ApplicationsDetailsProps {
   application: ApplicationType;

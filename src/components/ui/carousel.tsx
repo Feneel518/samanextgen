@@ -353,7 +353,7 @@ const CarouselIndicator = forwardRef<
       ref={ref}
       size="icon"
       className={cn(
-        "h-6 w-6 rounded-full bg-transparent",
+        "size-12 rounded-full bg-transparent text-xl",
         "data-[active='false']:text-white/50 data-[active='true']:text-white",
         className
       )}

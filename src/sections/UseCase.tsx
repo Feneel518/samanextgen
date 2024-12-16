@@ -28,6 +28,8 @@ const UseCase: FC<UseCaseProps> = ({}) => {
         <div className="grid lg:grid-cols-2 items-center justify-center max-lg:divide-y-2 lg:divide-x-2 divide-gray-200/20  w-full">
           <div className="p-8 w-full">
             <div className="relative lg:w-full lg:aspect-[5/4] w-[400px] max-lg:h-[650px]  sm:w-[550px]">
+              <div className="absolute inset-0 bg-black/10  z-10"></div>
+
               <div className="absolute inset-0 p-10 z-10 text-black font-oswald text-5xl flex flex-col gap-4">
                 <h1>Integrated Voice Module</h1>
                 <p className="text-xl xl:w-1/2">
@@ -58,7 +60,8 @@ const UseCase: FC<UseCaseProps> = ({}) => {
           </div>
           <div className="p-8 w-full">
             <div className="relative lg:w-full lg:aspect-[5/4] w-[400px] max-lg:h-[650px]  sm:w-[550px]">
-              <div className="absolute inset-0 p-10 z-10 text-white font-oswald text-5xl flex flex-col gap-4 ">
+              <div className="absolute inset-0 bg-black/20  z-10"></div>
+              <div className="absolute inset-0 p-10 z-20 text-white font-oswald text-5xl flex flex-col gap-4 ">
                 <h1> Accessory Voice Module</h1>
                 <p className="text-xl xl:w-1/2">
                   The Accessory Voice Module eliminates handheld remote chaos by
