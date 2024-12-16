@@ -20,40 +20,134 @@ export const PRODUCTS = [
       {
         name: "Aster",
         features: [
-          "Built with a single digital microphone",
-          "Single-language support for precise voice control",
-          "Ideal for integration into existing appliances like fans",
-          "Supports seamless communication via UART or other protocols",
-          "Compact voice module for simplifying and smartening home appliances",
-          "Offline voice processing for consistent and reliable performance without internet",
-          "Equipped with noise suppression and active gain control for clear command recognition",
+          <>
+            Built with a{" "}
+            <span className="underline underline-offset-4">
+              single digital microphone
+            </span>
+          </>,
+          <>
+            <span className="underline underline-offset-4">
+              Single-language support
+            </span>{" "}
+            for precise voice control
+          </>,
+          <>
+            <span className="underline underline-offset-4">
+              Ideal for integration
+            </span>{" "}
+            into existing appliances like fans{" "}
+          </>,
+          <>
+            Supports seamless communication via{" "}
+            <span className="underline underline-offset-4">UART</span> or
+            similar protocols
+          </>,
+          <>
+            <span className="underline underline-offset-4">
+              Compact voice module
+            </span>{" "}
+            for simplifying and smartening home appliances{" "}
+          </>,
+          <>
+            <span className="underline underline-offset-4">
+              Offline voice processing
+            </span>{" "}
+            for consistent and{" "}
+            <span className="underline underline-offset-4">
+              reliable performance
+            </span>{" "}
+            without internet{" "}
+          </>,
+          <>
+            Equipped with{" "}
+            <span className="underline underline-offset-4">
+              noise suppression
+            </span>{" "}
+            and{" "}
+            <span className="underline underline-offset-4">
+              active gain control
+            </span>{" "}
+            for clear command recognition
+          </>,
+          // "Built with a single digital microphone",
+          // "Single-language support for precise voice control",
+          // "Ideal for integration into existing appliances like fans",
+          // "Supports seamless communication via UART or other protocols",
+          // "Compact voice module for simplifying and smartening home appliances",
+          // "Offline voice processing for consistent and reliable performance without internet",
+          // "Equipped with noise suppression and active gain control for clear command recognition",
         ],
       },
       {
         name: "Bellis",
         features: [
-          "Offline voice processing with dual digital microphones",
-          "Supports seamless connectivity via UART or similar protocols",
-          "Dual-language recognition for versatility among diverse users",
-          "Improved far-field recognition and superior command accuracy",
-          "Advanced voice module for enhanced voice control in smart home devices",
-          "Equipped with noise suppression and active gain control for clear voice input",
-          "Ideal for upgrading traditional appliances like fans into modern smart systems",
+          <>
+            Offline voice processing with{" "}
+            <span className="underline underline-offset-4">
+              dual digital microphones
+            </span>
+          </>,
+          <>
+            Supports seamless connectivity via{" "}
+            <span className="underline underline-offset-4">UART</span> or
+            similar protocols
+          </>,
+          <>
+            <span className="underline underline-offset-4">Dual-language</span>{" "}
+            recognition for versatility among diverse users{" "}
+          </>,
+          <>
+            Improved{" "}
+            <span className="underline underline-offset-4">far-field</span>{" "}
+            recognition and superior command accuracy
+          </>,
+          <>
+            Advanced voice module for{" "}
+            <span className="underline underline-offset-4">
+              enhanced voice control
+            </span>{" "}
+            in smart home devices{" "}
+          </>,
+          <>
+            Equipped with{" "}
+            <span className="underline underline-offset-4">
+              noise suppression
+            </span>{" "}
+            and{" "}
+            <span className="underline underline-offset-4">
+              active gain control
+            </span>{" "}
+            for clear voice input{" "}
+          </>,
+          <>
+            Ideal for upgrading traditional appliances like fans into{" "}
+            <span className="underline underline-offset-4">
+              modern smart systems
+            </span>{" "}
+          </>,
+          // "Offline voice processing with dual digital microphones",
+          // "Supports seamless connectivity via UART or similar protocols",
+          // "Dual-language recognition for versatility among diverse users",
+          // "Improved far-field recognition and superior command accuracy",
+          // "Advanced voice module for enhanced voice control in smart home devices",
+          // "Equipped with noise suppression and active gain control for clear voice input",
+          // "Ideal for upgrading traditional appliances like fans into modern smart systems",
         ],
       },
       {
         name: "Dahlia",
         features: [
           <>
+            Excels in{" "}
+            <span className="underline underline-offset-4">far-field</span>{" "}
+            voice recognition for larger spaces
+          </>,
+          <>
             Offline voice processing with{" "}
             <span className="underline underline-offset-4">
               four digital microphones
             </span>
-          </>,
-          <>
-            Excels in{" "}
-            <span className="underline underline-offset-4">far-field</span>
-            voice recognition for larger spaces
           </>,
           <>
             Transforms appliances like fans into{" "}
@@ -70,11 +164,9 @@ export const PRODUCTS = [
             recognition for diverse users and global applications
           </>,
           <>
-            Supports{" "}
-            <span className="underline underline-offset-4">
-              seamless integration
-            </span>{" "}
-            via UART or other communication protocols
+            Supports seamless integration via{" "}
+            <span className="underline underline-offset-4">UART</span> or other
+            communication protocols
           </>,
           <>
             Advanced{" "}
@@ -105,7 +197,7 @@ export const PRODUCTS = [
     paragraph1:
       "The Accessory Voice Module is a versatile, all-in-one solution designed to simplify and modernize the way you interact with IR-enabled devices. With advanced offline voice recognition and seamless mobile application integration, it eliminates the need for handheld remotes while delivering a customizable experience tailored to your needs.",
     paragraph2:
-      "The Accessory Voice Module brings offline voice processing to control IR-enabled devices such as ACs, TVs, fans, and lights effortlessly through voice commands or a mobile application. With support for OTA updates and single-language recognition, it also offers the flexibility to select multiple languages to suit diverse requirements. Its mobile application allows comprehensive control over connected devices, including playback and streaming functionality for speakers, which can be designed to integrate Bluetooth and Wi-Fi audio streaming. Equipped with two PDM microphones for superior voice recognition and active gain control, the module ensures reliable performance in various environments. Perfect for IoT integration, this module is highly customizable to meet the unique demands of your business.",
+      "The Accessory Voice Module brings offline voice processing to control IR-enabled devices such as ACs, TVs, fans, and lights effortlessly through voice commands or a mobile application. With support for OTA updates and single-language recognition, it also offers the flexibility to select multiple languages to suit diverse requirements. Its mobile application allows comprehensive control over connected devices, including playback and streaming functionality for speakers, which can be designed to integrate Bluetooth and Wi-Fi audio streaming. Equipped with advanced noise cancellation and signal amplification algorithms, this module ensures exceptional voice clarity even in noisy environments. Its versatile design makes it suitable for integration into various IoT applications. This module is highly customizable to meet the unique demands of your business.",
     image: "/accessory1.png",
     imageTitle: "Integrated Voice Module",
     imageDesc:
@@ -119,15 +211,69 @@ export const PRODUCTS = [
       {
         name: "Eruca",
         features: [
-          "Supports Multiple Languages",
-          "Customizable to meet business-specific needs",
+          <>
+            Supports{" "}
+            <span className="underline underline-offset-4">
+              Multiple Languages
+            </span>
+          </>,
+          <>
+            <span className="underline underline-offset-4">Customizable</span>{" "}
+            to meet business-specific needs
+          </>,
+          <>
+            Supports{" "}
+            <span className="underline underline-offset-4">
+              Over-the-Air (OTA)
+            </span>{" "}
+            updates for ongoing improvements
+          </>,
+          <>
+            Equipped with{" "}
+            <span className="underline underline-offset-4">
+              two Digital microphones
+            </span>{" "}
+            for superior voice capture{" "}
+          </>,
+          <>
+            Control devices using{" "}
+            <span className="underline underline-offset-4">
+              simple voice commands
+            </span>{" "}
+            or a{" "}
+            <span className="underline underline-offset-4">
+              mobile application
+            </span>{" "}
+          </>,
+          <>
+            Can be integrated into{" "}
+            <span className="underline underline-offset-4">IoT devices</span>{" "}
+            like speakers, enabling Bluetooth and Wi-Fi audio streaming{" "}
+          </>,
+          <>
+            <span className="underline underline-offset-4">
+              Innovative voice module
+            </span>{" "}
+            enabling offline voice processing for controlling IR-enabled devices
+            (ACs, TVs, fans, lights){" "}
+          </>,
+          <>
+            Utilizes{" "}
+            <span className="underline underline-offset-4">
+              GC(Active Gain Control), AEC (Acoustic Echo Cancellation), VNR
+              (Voice to Noise Ratio Estimator), and NS (Noise Suppression)
+            </span>{" "}
+            for enhanced voice clarity in noisy environments.
+          </>,
+          // "Supports Multiple Languages",
+          // "Customizable to meet business-specific needs",
           // "Voice control for playback functions in IoT devices",
-          "Supports Over-the-Air (OTA) updates for ongoing improvements",
-          "Equipped with two Digital microphones for superior voice capture",
-          "Control devices using simple voice commands or a mobile application",
-          "Can be integrated into IoT devices like speakers, enabling Bluetooth and Wi-Fi audio streaming",
-          "Innovative voice module enabling offline voice processing for controlling IR-enabled devices (ACs, TVs, fans, lights)",
-          "Utilizes AGC(Active Gain Control), AEC (Acoustic Echo Cancellation), VNR (Voice to Noise Ratio Estimator), and NS (Noise Suppression) for enhanced voice clarity in noisy environments.",
+          // "Supports Over-the-Air (OTA) updates for ongoing improvements",
+          // "Equipped with two Digital microphones for superior voice capture",
+          // "Control devices using simple voice commands or a mobile application",
+          // "Can be integrated into IoT devices like speakers, enabling Bluetooth and Wi-Fi audio streaming",
+          // "Innovative voice module enabling offline voice processing for controlling IR-enabled devices (ACs, TVs, fans, lights)",
+          // "Utilizes AGC(Active Gain Control), AEC (Acoustic Echo Cancellation), VNR (Voice to Noise Ratio Estimator), and NS (Noise Suppression) for enhanced voice clarity in noisy environments.",
         ],
       },
     ],

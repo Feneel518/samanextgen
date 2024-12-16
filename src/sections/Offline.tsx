@@ -8,8 +8,8 @@ interface OfflineProps {}
 const Offline: FC<OfflineProps> = ({}) => {
   return (
     <section className="px-8 ">
-      <div className="py-10 lg:py-20 grid xl:grid-cols-2 gap-8 xl:flex-row border-b  border-gray-200/20 ">
-        <div className="relative w-[600px] aspect-square mx-auto max-xl:order-2 ">
+      <div className="py-10 lg:py-20 grid lg:grid-cols-2 gap-8 lg:flex-row border-b  border-gray-200/20 ">
+        <div className="relative w-[500px] xl:w-[600px] aspect-square mx-auto max-lg:order-2 ">
           <Image
             src={"/offline2.png"}
             alt="offline"
@@ -17,8 +17,8 @@ const Offline: FC<OfflineProps> = ({}) => {
             className="object-contain"
           ></Image>
         </div>
-        <div className="xl:border-l w-full flex items-center justify-center max-xl:border-b max-xl:pb-20 max-xl:text-center max-xl:order-1 border-gray-200/20 -ml-6">
-          <div className="  xl:pl-36 ">
+        <div className="lg:border-l w-full flex items-center justify-center max-lg:border-b max-xl:pb-20 max-lg:text-center max-lg:order-1 border-gray-200/20 -ml-6">
+          <div className="  lg:pl-20 xl:pl-36 ">
             <Heading className="">
               <div className="max-lg:text-center shrink-0   ">
                 Enabling Voice and AI application with unique embedded hardware
