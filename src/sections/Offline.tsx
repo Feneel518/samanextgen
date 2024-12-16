@@ -17,8 +17,8 @@ const Offline: FC<OfflineProps> = ({}) => {
             className="object-contain"
           ></Image>
         </div>
-        <div className="xl:border-l w-full flex items-center justify-center max-xl:border-b max-xl:pb-20 max-xl:text-center max-xl:order-1 border-gray-200/20">
-          <div className="  xl:pl-40 ">
+        <div className="xl:border-l w-full flex items-center justify-center max-xl:border-b max-xl:pb-20 max-xl:text-center max-xl:order-1 border-gray-200/20 -ml-6">
+          <div className="  xl:pl-36 ">
             <Heading className="">
               <div className="max-lg:text-center shrink-0   ">
                 Enabling Voice and AI application with unique embedded hardware
