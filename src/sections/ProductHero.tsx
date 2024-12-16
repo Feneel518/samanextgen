@@ -36,7 +36,7 @@ const ProductHero: FC<ProductHeroProps> = ({ heading }) => {
         </div> */}
       </div>
       <div className="py-10 xl:py-20 border-b border-gray-200/20">
-        <div className="lg:w-1/2 z-10 ">
+        <div className=" text-center z-10 ">
           <Paragraph className="lg:text-3xl">
             <p>{heading.desc}</p>
           </Paragraph>

@@ -2,11 +2,7 @@ export const HEADER = [
   {
     id: 0,
     name: "Application",
-    heading: (
-      <>
-        Applications of Our <br className="max-lg:hidden" /> Technology
-      </>
-    ),
+    heading: <>Applications</>,
 
     desc: "Explore how our cutting-edge voice solutions integrate seamlessly into diverse environments, transforming traditional devices and improving user experiences across industries.",
     image: "/application.jpg",
@@ -14,11 +10,7 @@ export const HEADER = [
   {
     id: 1,
     name: "Product",
-    heading: (
-      <>
-        Products of Our <br className="max-lg:hidden" /> Technology,
-      </>
-    ),
+    heading: <>Products</>,
     desc: "SAMA Next Gen delivers unmatched scalability, adapting seamlessly to diverse needs across size, power, cost, ecosystems, unique connectivity capabilities, and customizations. Our solutions are purpose-built to address the specific requirements of our customers, ensuring maximum flexibility and value.",
     image: "/productHero.jpeg",
   },
