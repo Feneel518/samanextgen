@@ -2,7 +2,7 @@ export const PRODUCTS = [
   {
     id: "ivm",
     name: "Voice assistance Unplugged!",
-    mainHeading: "Integrated Voice Module.",
+    mainHeading: "Integrated Voice Module",
     paragraph1:
       "The Integrated Voice Module offers a seamless solution for voice-activated control, with Aster, Bellis, and Dahlia tailored for diverse needs. From simple setups to advanced integrations, these modules bring effortless, intuitive smart control to your devices.",
     paragraph2:
@@ -44,13 +44,56 @@ export const PRODUCTS = [
       {
         name: "Dahlia",
         features: [
-          "Offline voice processing with four digital microphones",
-          "Excels in far-field voice recognition for larger spaces",
-          "Transforms appliances like fans into intelligent systems",
-          "Premium voice module with next-generation voice capabilities",
-          "Multi-language recognition for diverse users and global applications",
-          "Supports seamless integration via UART or other communication protocols",
-          "Advanced noise suppression and active gain control for crystal-clear voice input",
+          <>
+            Offline voice processing with{" "}
+            <span className="underline underline-offset-4">
+              four digital microphones
+            </span>
+          </>,
+          <>
+            Excels in{" "}
+            <span className="underline underline-offset-4">far-field</span>
+            voice recognition for larger spaces
+          </>,
+          <>
+            Transforms appliances like fans into{" "}
+            <span className="underline underline-offset-4">
+              intelligent systems
+            </span>
+          </>,
+          <>
+            <span className="underline underline-offset-4">Premium voice</span>{" "}
+            module with next-generation voice capabilities
+          </>,
+          <>
+            <span className="underline underline-offset-4">Multi-language</span>{" "}
+            recognition for diverse users and global applications
+          </>,
+          <>
+            Supports{" "}
+            <span className="underline underline-offset-4">
+              seamless integration
+            </span>{" "}
+            via UART or other communication protocols
+          </>,
+          <>
+            Advanced{" "}
+            <span className="underline underline-offset-4">
+              noise suppression
+            </span>{" "}
+            and{" "}
+            <span className="underline underline-offset-4">
+              active gain control
+            </span>{" "}
+            for crystal-clear voice input
+          </>,
+          // "Offline voice processing with four digital microphones",
+          // "Excels in far-field voice recognition for larger spaces",
+          // "Transforms appliances like fans into intelligent systems",
+          // "Premium voice module with next-generation voice capabilities",
+          // "Multi-language recognition for diverse users and global applications",
+          // "Supports seamless integration via UART or other communication protocols",
+          // "Advanced noise suppression and active gain control for crystal-clear voice input",
         ],
       },
     ],
@@ -78,7 +121,7 @@ export const PRODUCTS = [
         features: [
           "Supports Multiple Languages",
           "Customizable to meet business-specific needs",
-          "Voice control for playback functions in IoT devices",
+          // "Voice control for playback functions in IoT devices",
           "Supports Over-the-Air (OTA) updates for ongoing improvements",
           "Equipped with two Digital microphones for superior voice capture",
           "Control devices using simple voice commands or a mobile application",
@@ -119,7 +162,12 @@ const components = [
   {
     name: "Dahlia",
     features: [
-      "Offline voice processing with four digital microphones",
+      <div>
+        Offline voice processing with
+        <div className="underline underline-offset-2">
+          four digital microphones
+        </div>
+      </div>,
       "Multi-language recognition for diverse users and global applications",
       "Premium voice module with next-generation voice capabilities",
       "Excels in far-field voice recognition for larger spaces",

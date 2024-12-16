@@ -42,9 +42,7 @@ const ProductCarousel: FC<ProductCarouselProps> = ({ productComponents }) => {
                   {comp.features.map((fea, inde) => {
                     return (
                       <li key={inde}>
-                        <Paragraph>
-                          <p>{fea}</p>
-                        </Paragraph>
+                        <Paragraph>{fea}</Paragraph>
                       </li>
                     );
                   })}

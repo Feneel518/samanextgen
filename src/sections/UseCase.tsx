@@ -157,7 +157,7 @@ const UseCase: FC<UseCaseProps> = ({}) => {
               offline voice applications. As a trusted ODM and system
               integrator, we empower smarter living with Edge AI technology in
               speakers and voice-enabled home appliances, delivering seamless
-              functionality and exceptional user&apos;s experience.
+              functionality and exceptional user experience.
             </p>
           </Paragraph>
         </div>
