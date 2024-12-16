@@ -11,16 +11,16 @@ interface ApplicationsDetailsProps {
 const ApplicationsDetails: FC<ApplicationsDetailsProps> = ({ application }) => {
   return (
     <div
-      className={`py-10 lg:py-20 flex flex-col items-center ${
+      className={`py-10 lg:py-20 flex flex-col lg:items-center ${
         application.id % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
       } max-lg:gap-10 border-b border-gray-200/20`}
     >
-      <div className={`flex-1 ${application.id % 2 === 0 ? "" : "ml-40"}`}>
+      <div className={`flex-1 ${application.id % 2 === 0 ? "" : "lg:ml-40"}`}>
         <Heading className="">
           <h1 className="">{application.heading}</h1>
         </Heading>
         <Paragraph>
-          <div className="p-8 w-2/3">
+          <div className="p-8 lg:w-2/3">
             <ol className="list-disc">
               {application.features.map((fea, index) => {
                 return <li key={index}>{fea}</li>;
@@ -31,11 +31,11 @@ const ApplicationsDetails: FC<ApplicationsDetailsProps> = ({ application }) => {
       </div>
 
       <div
-        className={`lg:w-[750px] lg:h-[300px] relative  ${
+        className={`md:w-[750px] h-[300px] relative  ${
           application.id % 2 === 0
             ? "lg:border-l lg:pl-8"
             : "lg:border-r lg:pr-8"
-        } border-gray-200/20 mx-auto   shrink-0  lg:ml-5  `}
+        } border-gray-200/20 lg:mx-auto   shrink-0  lg:ml-5  `}
       >
         <div className="relative p-8 w-full h-full rounded-xl">
           <Image

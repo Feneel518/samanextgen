@@ -17,7 +17,7 @@ const ProductHero: FC<ProductHeroProps> = ({}) => {
             </h1>
           </Heading>
         </div>
-        <div className="w-1/3">
+        <div className="lg:w-1/3">
           <Paragraph>
             <p>
               Explore how our cutting-edge voice solutions integrate seamlessly

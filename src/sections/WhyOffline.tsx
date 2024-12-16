@@ -11,9 +11,12 @@ interface WhyOfflineProps {}
 const WhyOffline: FC<WhyOfflineProps> = ({}) => {
   return (
     <section className="px-8">
-      {APPLICATIONS.map((application) => {
+      {APPLICATIONS.map((application, index) => {
         return (
-          <ApplicationsDetails application={application}></ApplicationsDetails>
+          <ApplicationsDetails
+            key={index}
+            application={application}
+          ></ApplicationsDetails>
         );
       })}
     </section>
