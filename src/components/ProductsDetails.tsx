@@ -83,7 +83,7 @@ const ProductsDetails: FC<ProductsDetailsProps> = ({ product }) => {
           <ProductCarousel
             productComponents={product.components}
           ></ProductCarousel>
-          <div className="grid grid-cols-1">
+          <div className="grid grid-cols-1 mt-8">
             {/* <Paragraph>
                 <p>{product.paragraph1}</p>
               </Paragraph> */}
@@ -91,7 +91,7 @@ const ProductsDetails: FC<ProductsDetailsProps> = ({ product }) => {
               <p>{product.paragraph2}</p>
             </Paragraph>
           </div>
-          <div className="w-full mx-auto border border-gray-200/20"></div>
+          <div className="w-full mx-auto border border-gray-200/20 "></div>
         </div>
       </div>
     </section>

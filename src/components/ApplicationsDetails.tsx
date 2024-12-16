@@ -21,7 +21,7 @@ const ApplicationsDetails: FC<ApplicationsDetailsProps> = ({ application }) => {
         </Heading>
         <Paragraph>
           <div className="p-8 lg:w-2/3">
-            <ol className="list-disc">
+            <ol className="list-disc space-y-1">
               {application.features.map((fea, index) => {
                 return <li key={index}>{fea}</li>;
               })}

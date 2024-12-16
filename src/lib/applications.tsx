@@ -13,7 +13,7 @@ export const APPLICATIONS = [
     id: 1,
     heading: "Consumer Electronics",
     features: [
-      "Embedded into fans or speakers for voice-controlled playback.",
+      "Streamline device management by replacing handheld remotes with seamless voice-controlled operation for IR-enabled systems.",
       "Integration into entertainment systems for IR-based device control.",
       "Bluetooth and Wi-Fi streaming capabilities.",
     ],

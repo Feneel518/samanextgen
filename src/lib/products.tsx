@@ -248,19 +248,22 @@ export const PRODUCTS = [
             like speakers, enabling Bluetooth and Wi-Fi audio streaming{" "}
           </>,
           <>
+            Innovative voice module enabling offline voice processing for
+            controlling{" "}
             <span className="underline underline-offset-4">
-              Innovative voice module
+              IR-enabled devices
             </span>{" "}
-            enabling offline voice processing for controlling IR-enabled devices
             (ACs, TVs, fans, lights){" "}
           </>,
           <>
-            Utilizes{" "}
-            <span className="underline underline-offset-4">
-              AGC(Active Gain Control), AEC (Acoustic Echo Cancellation), VNR
-              (Voice to Noise Ratio Estimator), and NS (Noise Suppression)
-            </span>{" "}
-            for enhanced voice clarity in noisy environments.
+            Utilizes <span className="underline underline-offset-4">AGC</span>{" "}
+            (Active Gain Control),{" "}
+            <span className="underline underline-offset-4">AEC</span> (Acoustic
+            Echo Cancellation),{" "}
+            <span className="underline underline-offset-4">VNR</span> (Voice to
+            Noise Ratio Estimator), and{" "}
+            <span className="underline underline-offset-4">NS</span> (Noise
+            Suppression) for enhanced voice clarity in noisy environments.
           </>,
           // "Supports Multiple Languages",
           // "Customizable to meet business-specific needs",

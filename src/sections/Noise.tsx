@@ -10,31 +10,27 @@ interface NoiseProps {}
 const Noise: FC<NoiseProps> = ({}) => {
   const noise = [
     {
-      title: "Echo Removal (AEC)",
-      desc: "Removes unwanted echoes to improve clarity.",
+      title: "2019 Onwards",
+      desc: "In 2019, SAMA was founded with the mission to revolutionize audio and voice technologies. With a focus on innovation, we set out to develop solutions that combine advanced engineering with real-world usability. From the beginning, our goal was to redefine how users interact with technology using seamless voice-enabled solutions.",
     },
     {
-      title: "Focus on Desired Sound",
-      desc: "Enhances the speaker's voice while minimizing background noise.",
+      title: "2019 - 2020",
+      desc: "During this period, SAMA specialized in designing Alexa-certified, IoT-based smart speaker modules for the German market. Our advanced modules offered seamless integration with IoT ecosystems, focusing on high-quality sound and intuitive user experiences. These products earned recognition for their compliance with global standards and innovation in the smart speaker domain.",
     },
     {
-      title: "Noise Suppression",
-      desc: "Eliminates distracting noises for a smooth experience.",
+      title: "2020 Onwards",
+      desc: "From 2020, SAMA extended its expertise to serve a leading telecom operator in India. Our engineering services included developing products such as smart speakers, IP cameras, and IoT gateways. This partnership solidified SAMA's position as a trusted technology provider, delivering high-performance, scalable solutions for diverse applications.",
     },
     {
-      title: "Automatic Volume Adjustment",
-      desc: "Ensures consistent sound levels regardless of distance.",
-    },
-    {
-      title: "Limiter",
-      desc: "Protects the sound quality by avoiding distortions.",
+      title: "2023 Onwards",
+      desc: "In 2023, SAMA began developing cost-optimized offline voice modules equipped with excellent noise cancellation and state-of-the-art voice recognition. These modules are tailored for controlling home appliances like fans, air conditioners, and other IoT devices. By focusing on offline functionality, SAMA ensures privacy, reduced latency, and reliable operation even in low-connectivity areas.",
     },
   ];
   return (
     <section className="px-8">
       <div className="py-10 border-b border-gray-200/20">
         <Heading>
-          <h1 className="text-center">Voice Optimization</h1>
+          <h1 className="text-center">SAMA's Journey</h1>
         </Heading>
       </div>
       <div className="py-10 lg:py-20 flex flex-col max-lg:gap-10 lg:flex-row border-b border-gray-200/20">
@@ -65,9 +61,9 @@ const Noise: FC<NoiseProps> = ({}) => {
           </div>
         </div>
         <div className="flex flex-col lg:pl-20 w-full gap-20 flex-1">
-          <div className="">
-            <div className="relative w-full h-[600px]">
-              <div className="absolute inset-0 p-10 z-10 text-black font-oswald text-5xl flex flex-col gap-4 bg-sama-primary/15">
+          <div className="sticky top-0 transition-all duration-200 ease-in-out">
+            <div className="relative w-full h-[600px] ">
+              <div className=" inset-0 p-10 z-10 text-black font-oswald text-5xl flex flex-col gap-4  rounded-3xl ">
                 {/* <h1>Integrated Voice Module</h1>
                 <p className="text-xl w-1/2">
                   The Integrated SAMA Voice Module is designed to bring
@@ -84,7 +80,7 @@ const Noise: FC<NoiseProps> = ({}) => {
                 </p> */}
               </div>
               <Image
-                src={"/noiseFilter.jpg"}
+                src={"/journey.jpg"}
                 alt="Integrated Voice Module"
                 fill
                 className="object-cover rounded-3xl"

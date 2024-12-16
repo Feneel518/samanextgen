@@ -1,6 +1,7 @@
 "use client";
 
 import ProductsDetails from "@/components/ProductsDetails";
+import { HEADER } from "@/lib/header";
 import { PRODUCTS } from "@/lib/products";
 import ProductHero from "@/sections/ProductHero";
 import UseCase from "@/sections/UseCase";
@@ -27,9 +28,11 @@ const page: FC<pageProps> = ({ searchParams }) => {
     scrolltoHash(searchParams.section);
   }, [searchParams, searchParams.section]);
 
+  const productHeader = HEADER.find((name) => name.name === "Product");
+
   return (
     <div className="">
-      {/* <ProductHero></ProductHero> */}
+      {productHeader && <ProductHero heading={productHeader}></ProductHero>}
       {PRODUCTS.map((product, index) => {
         return (
           <section key={index} id={product.id}>
