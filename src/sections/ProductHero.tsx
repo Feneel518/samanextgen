@@ -12,8 +12,8 @@ interface ProductHeroProps {
 const ProductHero: FC<ProductHeroProps> = ({ heading }) => {
   return (
     <section className="px-8">
-      <div className="flex flex-col relative  py-10 xl:py-20 border-b border-gray-200/20 gap-8 min-h-80">
-        <div className="absolute inset-y-4 inset-x-0  z-10 "></div>
+      <div className="flex flex-col relative  py-10 xl:py-20 border-b border-gray-200/20 gap-8 min-h-[420px]">
+        <div className="absolute inset-y-4 inset-x-0  z-10 bg-black/30"></div>
         <div className="absolute inset-y-4 inset-x-0 blur-[px]">
           <Image
             alt="Hero"

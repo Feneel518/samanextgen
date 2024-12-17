@@ -1,13 +1,10 @@
 import Heading from "@/components/Heading";
 import Paragraph from "@/components/Paragraph";
-import ProductComponent from "@/components/ProductComponent";
 import ShinyButton from "@/components/ShinyButton";
 import {
   Carousel,
   CarouselIndicator,
   CarouselMainContainer,
-  CarouselNext,
-  CarouselPrevious,
   CarouselThumbsContainer,
   SliderMainItem,
 } from "@/components/ui/carousel";
@@ -63,27 +60,12 @@ export const Hero = () => {
                           className="object-contain"
                         ></Image>
                       </div> */}
-                      <div className="flex items-center justify-center gap-8 w-full h-full mt-28 ">
-                        <div className="">
-                          <Waves></Waves>
-                        </div>
-                        <div className=" ">
-                          <Heading>
-                            <h1 className=" text-5xl lg:text-7xl font-oswald font-bold text-sama-primary max-lg:mb-4">
-                              SAMA
-                            </h1>
-                          </Heading>
-                        </div>
-                        <div className="">
-                          <Waves></Waves>
-                        </div>
-                      </div>
                     </div>
                     <Image
-                      src={"/heroImage.jpg"}
+                      src={"/heroImage4.jpg"}
                       alt="Hero Image"
                       fill
-                      className="object-cover rounded-3xl"
+                      className="object-cover object-top rounded-3xl"
                     ></Image>
                   </div>
                 </div>

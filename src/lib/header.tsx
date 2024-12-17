@@ -5,7 +5,7 @@ export const HEADER = [
     heading: <>Applications</>,
 
     desc: "Explore how our cutting-edge voice solutions integrate seamlessly into diverse environments, transforming traditional devices and improving user experiences across industries.",
-    image: "/application.jpg",
+    image: "/application3.jpg",
   },
   {
     id: 1,
