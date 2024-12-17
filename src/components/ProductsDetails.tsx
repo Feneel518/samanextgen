@@ -5,6 +5,8 @@ import Heading from "./Heading";
 import Paragraph from "./Paragraph";
 import ProductCarousel from "./ProductCarousel";
 import Slider from "./Slider";
+import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 interface ProductsDetailsProps {
   product: ProductType;
@@ -22,9 +24,9 @@ const ProductsDetails: FC<ProductsDetailsProps> = ({ product }) => {
               </Heading>
             </div>
             <div className="relative w-full h-[400px] ">
-              <AnimatedImage></AnimatedImage>
+              {/* <AnimatedImage></AnimatedImage> */}
 
-              {/* <div
+              <div
                 className={cn(
                   "absolute inset-0 p-10 z-10 text-black font-oswald text-5xl flex flex-col gap-4",
                   {
@@ -33,7 +35,6 @@ const ProductsDetails: FC<ProductsDetailsProps> = ({ product }) => {
                   }
                 )}
               >
-         
                 <div className="flex flex-col gap-3">
                   {product.featurepoints.map((point, index) => {
                     return (
@@ -56,7 +57,7 @@ const ProductsDetails: FC<ProductsDetailsProps> = ({ product }) => {
                 alt="Integrated Voice Module"
                 fill
                 className="object-cover object-bottom rounded-3xl"
-              ></Image> */}
+              ></Image>
             </div>
 
             {/* <ShinyButton href="/products" className="w-40 h-10">
