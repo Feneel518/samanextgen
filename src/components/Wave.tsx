@@ -8,7 +8,10 @@ interface WaveProps {
 const Wave: FC<WaveProps> = ({ className }) => {
   return (
     <div
-      className={cn(`w-[2px] rounded-[18px] h-[30px] bg-white wave`, className)}
+      className={cn(
+        `w-[6px] rounded-[18px] h-[30px] bg-sama-primary wave`,
+        className
+      )}
     ></div>
   );
 };
