@@ -19,6 +19,7 @@ export const PRODUCTS = [
     components: [
       {
         name: "Aster",
+        image: "/Aster.png",
         features: [
           // <>
           //   {/* Built with a{" "}
@@ -80,6 +81,8 @@ export const PRODUCTS = [
       },
       {
         name: "Bellis",
+        image: "/Bellis.png",
+
         features: [
           // <>
           //   Offline voice processing with{" "}
@@ -137,6 +140,7 @@ export const PRODUCTS = [
       },
       {
         name: "Dahlia",
+        image: "/Dahlia.png",
         features: [
           // <>
           //   Excels in{" "}
@@ -210,6 +214,7 @@ export const PRODUCTS = [
     components: [
       {
         name: "Eruca",
+        image: "",
         features: [
           // <>
           //   Supports{" "}
@@ -287,6 +292,7 @@ export const PRODUCTS = [
 const components = [
   {
     name: "Aster",
+    image: "/Aster.png",
     features: [
       "Built with a single digital microphone",
       "Single-language support for precise voice control",
@@ -299,6 +305,7 @@ const components = [
   },
   {
     name: "Bellis",
+    image: "/Bellis.png",
     features: [
       "Offline voice processing with dual digital microphones",
       "Dual-language recognition for versatility among diverse users",
@@ -311,6 +318,7 @@ const components = [
   },
   {
     name: "Dahlia",
+    image: "/Dahlia.png",
     features: [
       <div>
         Offline voice processing with

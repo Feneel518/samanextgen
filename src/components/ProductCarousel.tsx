@@ -50,7 +50,7 @@ const ProductCarousel: FC<ProductCarouselProps> = ({ productComponents }) => {
                   </ol>
                   <div className="relative size-[380px] md:size-[500px] shrink-0 ">
                     <Image
-                      src={"/Aster.png"}
+                      src={comp.image}
                       alt={comp.name}
                       fill
                       className="object-cover rounded-2xl"
