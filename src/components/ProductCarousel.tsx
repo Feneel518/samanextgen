@@ -34,12 +34,36 @@ const ProductCarousel: FC<ProductCarouselProps> = ({ productComponents }) => {
         {productComponents.map((comp, index) => {
           return (
             <SliderMainItem key={index} className="bg-transparent h-fit">
-              <div className="flex flex-col gap-8 justify-between h-full">
-                <Heading className="ml-16">
+              <div className="grid grid-cols-1 lg:grid-cols-2 items-center  pl-4 max-lg:gap-10 ">
+                <div className="flex flex-col gap-8 pl-20">
+                  <Heading className="">
+                    <h1>{comp.name}</h1>
+                  </Heading>
+                  <ol className="list-disc flex flex-col gap-4   ">
+                    {comp.features.map((fea, inde) => {
+                      return (
+                        <li key={inde}>
+                          <Paragraph>{fea}</Paragraph>
+                        </li>
+                      );
+                    })}
+                  </ol>
+                </div>
+                <div className="relative size-[380px] md:size-[500px] shrink-0 mx-auto ">
+                  <Image
+                    src={comp.image}
+                    alt={comp.name}
+                    fill
+                    className="object-cover rounded-2xl"
+                  ></Image>
+                </div>
+              </div>
+              {/* <div className="flex flex-col gap-8 justify-between h-full  ml-4 xl:ml-16">
+                <Heading className="">
                   <h1>{comp.name}</h1>
                 </Heading>
-                <div className="lg:ml-8 flex flex-col xl:flex-row xl:items-center justify-center gap-8">
-                  <ol className="list-disc ml-4 xl:ml-16 flex flex-col gap-4  ">
+                <div className="flex flex-col xl:flex-row xl:items-center justify-center gap-8">
+                  <ol className="list-disc flex flex-col gap-4  ">
                     {comp.features.map((fea, inde) => {
                       return (
                         <li key={inde}>
@@ -57,110 +81,10 @@ const ProductCarousel: FC<ProductCarouselProps> = ({ productComponents }) => {
                     ></Image>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </SliderMainItem>
           );
         })}
-        {/* <SliderMainItem className="bg-transparent">
-          <div className="flex flex-col gap-10 py-20">
-            <Heading className="xl:px-80 text-center">
-              <h1>
-                See how SAMA NextGen's AI-powered smart home solutions can
-                transform your business.
-              </h1>
-            </Heading>
-            <div className="grid grid-cols-1 lg:grid-cols-2 xl:px-[200px] ">
-              <div className="xl:border-r border-b p-8 border-gray-200/20">
-                <aside className="flex flex-col justify-center items-center h-full">
-                  <h1 className="text-6xl xl:text-8xl font-oswald brand-grad">
-                    Aster
-                  </h1>
-                  <p className="flex items-center gap-1 group cursor-pointer text-xs text-gray-400">
-                    See More{" "}
-                    <ArrowRight
-                      strokeWidth={1}
-                      size={20}
-                      className="group-hover:translate-x-1 transition-transform ease-in-out duration-150"
-                    ></ArrowRight>
-                  </p>
-                </aside>
-              </div>
-              <div className="border-b border-gray-200/20 p-8">
-                <aside className="flex flex-col justify-center items-center h-full">
-                  <h1 className="text-6xl xl:text-8xl font-oswald brand-grad ">
-                    Bellis
-                  </h1>
-                  <p className="flex items-center gap-1 group cursor-pointer text-xs text-gray-400">
-                    See More{" "}
-                    <ArrowRight
-                      strokeWidth={1}
-                      size={20}
-                      className="group-hover:translate-x-1 transition-transform ease-in-out duration-150"
-                    ></ArrowRight>
-                  </p>
-                </aside>
-              </div>
-              <div className="xl:border-r max-xl:border-b p-8 border-gray-200/20">
-                <aside className="flex flex-col justify-center items-center h-full">
-                  <h1 className="text-6xl xl:text-8xl font-oswald brand-grad">
-                    Dahlia
-                  </h1>
-                  <p className="flex items-center gap-1 group cursor-pointer text-xs text-gray-400">
-                    See More{" "}
-                    <ArrowRight
-                      strokeWidth={1}
-                      size={20}
-                      className="group-hover:translate-x-1 transition-transform ease-in-out duration-150"
-                    ></ArrowRight>
-                  </p>
-                </aside>
-              </div>
-              <div className="p-8">
-                <aside className="flex flex-col justify-center items-center h-full">
-                  <h1 className="text-6xl xl:text-8xl font-oswald brand-grad">
-                    Eruca
-                  </h1>
-                  <p className="flex items-center gap-1 group cursor-pointer text-xs text-gray-400">
-                    See More{" "}
-                    <ArrowRight
-                      strokeWidth={1}
-                      size={20}
-                      className="group-hover:translate-x-1 transition-transform ease-in-out duration-150"
-                    ></ArrowRight>
-                  </p>
-                </aside>
-              </div>
-            </div>
-          </div>
-        </SliderMainItem> */}
-        {/* <SliderMainItem className="bg-transparent">
-          <div className="flex flex-col items-center gap-10 py-20">
-            <Heading className="xl:px-80 text-center">
-              <h1>The Future of Voice is Offline and Private</h1>
-            </Heading>
-
-            <div className="relative hidden lg:flex lg:w-[900px] aspect-[4/2]">
-              <Image
-                src={"/offlineWhite.png"}
-                alt="offline control"
-                fill
-                className="object-contain"
-              ></Image>
-            </div>
-            <div className="lg:hidden grid grid-cols-2 gap-16">
-              {Array.from({ length: 8 }).map((_, index) => (
-                <div className="relative size-28">
-                  <Image
-                    src={`/${index + 1}.png`}
-                    alt="Home Autoamtion icons"
-                    fill
-                    className="object-cover"
-                  ></Image>
-                </div>
-              ))}
-            </div>
-          </div>
-        </SliderMainItem> */}
       </CarouselMainContainer>
       {productComponents.length > 1 && (
         <div className="absolute -bottom-16 left-1/2 -translate-x-1/2">
