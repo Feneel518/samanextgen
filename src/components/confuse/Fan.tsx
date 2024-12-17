@@ -20,7 +20,7 @@ const Fan: FC<FanProps> = ({}) => {
       setCheck(true);
     }, 1500);
     return () => clearInterval(start);
-  }, [hover]);
+  }, [check]);
 
   return (
     <div className="relative w-fit  group ">
