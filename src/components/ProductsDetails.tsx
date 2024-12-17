@@ -7,6 +7,7 @@ import Image from "next/image";
 import ProductCarousel from "./ProductCarousel";
 import { ProductType } from "@/lib/products";
 import { cn } from "@/lib/utils";
+import AnimatedImage from "./AnimatedImage";
 
 interface ProductsDetailsProps {
   product: ProductType;
@@ -24,7 +25,8 @@ const ProductsDetails: FC<ProductsDetailsProps> = ({ product }) => {
               </Heading>
             </div>
             <div className="relative w-full h-[400px] ">
-              <div
+              <AnimatedImage></AnimatedImage>
+              {/* <div
                 className={cn(
                   "absolute inset-0 p-10 z-10 text-black font-oswald text-5xl flex flex-col gap-4",
                   {
@@ -33,8 +35,7 @@ const ProductsDetails: FC<ProductsDetailsProps> = ({ product }) => {
                   }
                 )}
               >
-                {/* <h1>{product.imageTitle}</h1> */}
-                {/* <p className="text-xl ">{product.imageDesc}</p> */}
+         
                 <div className="flex flex-col gap-3">
                   {product.featurepoints.map((point, index) => {
                     return (
@@ -57,7 +58,7 @@ const ProductsDetails: FC<ProductsDetailsProps> = ({ product }) => {
                 alt="Integrated Voice Module"
                 fill
                 className="object-cover object-bottom rounded-3xl"
-              ></Image>
+              ></Image> */}
             </div>
 
             {/* <ShinyButton href="/products" className="w-40 h-10">

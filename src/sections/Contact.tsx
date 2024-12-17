@@ -1,4 +1,5 @@
 import Heading from "@/components/Heading";
+import Paragraph from "@/components/Paragraph";
 import ShinyButton from "@/components/ShinyButton";
 import { FC } from "react";
 
@@ -15,6 +16,12 @@ const Contact: FC<ContactProps> = ({}) => {
               <h1>Have any Queries?</h1>
             </Heading>
           </div>
+          <Paragraph>
+            For inquiries about Sama, feel free to contact us. Our team is
+            available to provide information, answer questions, and assist with
+            your needs. Reach out via email, phone, or our online support portal
+            for prompt assistance.
+          </Paragraph>
         </div>
         <div className="flex flex-col gap-4">
           <p className="uppercase">Find us on</p>

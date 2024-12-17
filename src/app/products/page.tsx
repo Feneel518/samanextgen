@@ -1,5 +1,6 @@
 "use client";
 
+import Heading from "@/components/Heading";
 import ProductsDetails from "@/components/ProductsDetails";
 import { HEADER } from "@/lib/header";
 import { PRODUCTS } from "@/lib/products";
@@ -33,6 +34,7 @@ const page: FC<pageProps> = ({ searchParams }) => {
   return (
     <div className="">
       {productHeader && <ProductHero heading={productHeader}></ProductHero>}
+
       {PRODUCTS.map((product, index) => {
         return (
           <section key={index} id={product.id}>

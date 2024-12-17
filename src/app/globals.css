@@ -98,73 +98,61 @@
     }
   }
 
-  .timeline {
-    width: 100%;
-    height: 480px;
-    padding: 20px;
-    position:relative;
-    box-sizing: border-box; 
-    overflow: auto;
-    display: flex;
+  .success-animation { margin:150px auto;}
+
+  .checkmark {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      display: block;
+      stroke-width: 2;
+      stroke: black;
+      stroke-miterlimit: 10;
+      box-shadow: inset 0px 0px 0px black;
+      animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+      position:relative;
+      top: 5px;
+      right: 5px;
+     margin: 0 auto;
   }
-  .timieline-title {
-    font-size: 1.5em;
-    font-weight: bold; 
-  }
-  .timeline-content {
-    max-width: 300px;
-    height: 200px;
-    padding: 20px;
-    flex-shrink: 0;
-    flex-grow: 0;
-    align-self: flex-start;
-    background: #FFF;
-    position: relative;
-    border-radius: 10px;
-    margin-right: 10px;
-    box-shadow: 0px 0px 2px 2px rgba(0,0,0, 0.2);
-  }
-  .timeline-content:before {
-    position: absolute;
-    width: calc(100% + 14px);
-    height: 4px;
-    top: calc(100% + 10px);
-    background: #FFF;
-    content: "";
-    left: -7px;
-    border-radius: 5px;
+  .checkmark__circle {
+      stroke-dasharray: 166;
+      stroke-dashoffset: 166;
+      stroke-width: 2;
+      stroke-miterlimit: 10;
+      stroke: black;
+      fill: white;
+      animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+   
   }
   
-  .timeline-content:after {
-    position: absolute;
-    width: 4px;
-    height: 25px;
-    top: 100%;
-    left: calc(50% - 10px);
-    background: #FFF;
-    content: "";
+  .checkmark__check {
+      transform-origin: 50% 50%;
+      stroke-dasharray: 48;
+      stroke-dashoffset: 48;
+      animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
   }
-  .timeline-period {
-    position: absolute;
-    top: calc(100% + 25px);
-    background: #FFF;
-    padding: 10px;
-    width: 100px;
-    text-align:center;
-    border-radius: 10px;
-    left: calc(50% - 60px);
-    box-shadow: 0px 0px 2px 2px rgba(0,0,0, 0.2);
+  
+  @keyframes stroke {
+      100% {
+          stroke-dashoffset: 0;
+      }
   }
-  .timeline-period:before {
-    width: 15px;
-    height: 15px;
-    background: #FFF;
-    border-radius: 50%;
-    content: "";
-    position: absolute;
-    top: -20px;
-    left: calc(50% - 6px);
-    z-index: 2;
+  
+  @keyframes scale {
+      0%, 100% {
+          transform: none;
+      }
+  
+      50% {
+          transform: scale3d(1.1, 1.1, 1);
+      }
+  }
+  
+  @keyframes fill {
+      100% {
+          box-shadow: inset 0px 0px 0px 30px black;
+      }
   }
   
   /*

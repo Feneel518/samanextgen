@@ -10,29 +10,29 @@ interface NoiseProps {}
 const Noise: FC<NoiseProps> = ({}) => {
   const noise = [
     {
-      title: "2019 Onwards",
-      desc: "In 2019, SAMA was founded with the mission to revolutionize audio and voice technologies. With a focus on innovation, we set out to develop solutions that combine advanced engineering with real-world usability. From the beginning, our goal was to redefine how users interact with technology using seamless voice-enabled solutions.",
+      title: "2019",
+      desc: "SAMA was founded with the mission to revolutionize audio and voice technologies. With a focus on innovation, we set out to develop solutions that combine advanced engineering with real-world usability. From the beginning, our goal was to redefine how users interact with technology using seamless voice-enabled solutions.",
     },
     {
-      title: "2019 - 2020",
-      desc: "During this period, SAMA specialized in designing Alexa-certified, IoT-based smart speaker modules for the German market. Our advanced modules offered seamless integration with IoT ecosystems, focusing on high-quality sound and intuitive user experiences. These products earned recognition for their compliance with global standards and innovation in the smart speaker domain.",
+      title: "2019",
+      desc: "SAMA specialized in designing Alexa-certified, IoT-based smart speaker modules for the German market. Our advanced modules offered seamless integration with IoT ecosystems, focusing on high-quality sound and intuitive user experiences. These products earned recognition for their compliance with global standards and innovation in the smart speaker domain.",
     },
     {
-      title: "2020 Onwards",
-      desc: "From 2020, SAMA extended its expertise to serve a leading telecom operator in India. Our engineering services included developing products such as smart speakers, IP cameras, and IoT gateways. This partnership solidified SAMA's position as a trusted technology provider, delivering high-performance, scalable solutions for diverse applications.",
+      title: "2020",
+      desc: "SAMA extended its expertise to serve a leading telecom operator in India. Our engineering services included developing products such as smart speakers, IP cameras, and IoT gateways. This partnership solidified SAMA's position as a trusted technology provider, delivering high-performance, scalable solutions for diverse applications.",
     },
     {
       title: "2023 Onwards",
-      desc: "In 2023, SAMA began developing cost-optimized offline voice modules equipped with excellent noise cancellation and state-of-the-art voice recognition. These modules are tailored for controlling home appliances like fans, air conditioners, and other IoT devices. By focusing on offline functionality, SAMA ensures privacy, reduced latency, and reliable operation even in low-connectivity areas.",
+      desc: "SAMA began developing cost-optimized offline voice modules equipped with excellent noise cancellation and state-of-the-art voice recognition. These modules are tailored for controlling home appliances like fans, air conditioners, and other IoT devices. By focusing on offline functionality, SAMA ensures privacy, reduced latency, and reliable operation even in low-connectivity areas.",
     },
   ];
   return (
     <section className="px-8">
-      <div className="py-10 border-b border-gray-200/20">
+      {/* <div className="py-10 border-b border-gray-200/20">
         <Heading>
-          <h1 className="text-center">SAMA's Journey</h1>
+          <h1 className="text-center">Our Story</h1>
         </Heading>
-      </div>
+      </div> */}
       <div className="py-10 lg:py-20 flex flex-col max-lg:gap-10 lg:flex-row border-b border-gray-200/20">
         <div className="flex-1 lg:border-r border-gray-200/20 flex items-start shrink-0 ">
           <div className="flex flex-col gap-6 w-full lg:pr-20  transition-all duration-200 ease-in-out lg:ml-10">
@@ -83,7 +83,7 @@ const Noise: FC<NoiseProps> = ({}) => {
                 src={"/journey.jpg"}
                 alt="Integrated Voice Module"
                 fill
-                className="object-cover rounded-3xl"
+                className="object-cover rounded-3xl -scale-100"
               ></Image>
             </div>
           </div>

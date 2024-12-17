@@ -2,6 +2,12 @@ import Heading from "@/components/Heading";
 import Paragraph from "@/components/Paragraph";
 import ProductComponent from "@/components/ProductComponent";
 import TeamComponent from "@/components/TeamComponent";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { FC } from "react";
@@ -15,7 +21,7 @@ const Team: FC<TeamProps> = ({}) => {
         <div className="lg:w-[550px] lg:border-r border-gray-200/20 flex items-start lg:shrink-0 ">
           <div className="flex flex-col gap-6 ">
             <Heading className="lg:w-[80%]">
-              <h1>Our Team</h1>
+              <h1>Management</h1>
             </Heading>
             <Paragraph>
               <p className="lg:w-2/3 ">
@@ -33,18 +39,14 @@ const Team: FC<TeamProps> = ({}) => {
             ></TeamComponent>
             <div className="w-full h-[1px] xl:w-[1px] xl:h-full bg-gray-200/20"></div>
             <TeamComponent
-              imageUrl="/April-Ho.png"
-              title="April Ho"
-              description="COO"
-            ></TeamComponent>
-            <div className="w-full h-[1px] xl:w-[1px] xl:h-full bg-gray-200/20"></div>
-          </div>
-          <div className="flex flex-col items-center xl:flex-row gap-5">
-            <TeamComponent
               imageUrl="/Vinay-Jawgal.png"
               title="Vinay Jawgal"
               description="MD & R&D"
             ></TeamComponent>
+            <div className="w-full h-[1px] xl:w-[1px] xl:h-full bg-gray-200/20"></div>
+          </div>
+          {/* <div className="flex flex-col items-center xl:flex-row gap-5">
+           
             <div className="w-full h-[1px] xl:w-[1px] xl:h-full bg-gray-200/20"></div>
 
             <TeamComponent
@@ -52,11 +54,11 @@ const Team: FC<TeamProps> = ({}) => {
               title="Francois Galy"
               description="Adviser Sales and Marketing"
             ></TeamComponent>
-          </div>
+          </div> */}
         </div>
         {/*  */}
         <div className="flex flex-col xl:pl-10 w-full gap-10 2xl:gap-20 max-xl:hidden">
-          <div className="flex max-lg:flex-col gap-12">
+          <div className="flex max-lg:flex-col gap-6 divide-x-2 divide-gray-200/20">
             <div className=" flex-1 ">
               <div className="flex flex-col gap-8">
                 <div className="relative w-[500px] h-[300px]">
@@ -68,14 +70,52 @@ const Team: FC<TeamProps> = ({}) => {
                   ></Image>
                 </div>
                 <div className="flex flex-col gap-4">
-                  <h1 className="text-4xl">Michael Pauli</h1>
+                  <Accordion type="single" collapsible className="w-full">
+                    <AccordionItem value="item-1">
+                      <AccordionTrigger>
+                        <h1 className="text-4xl">Michael Pauli</h1>
+                      </AccordionTrigger>
+                      <AccordionContent>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sed quidem repellat enim nulla quae rerum officia?
+                        Cumque repellat natus esse, id libero ut placeat quod?
+                      </AccordionContent>
+                    </AccordionItem>
+                  </Accordion>
+
                   <p className="tracking-widest">CEO</p>
                 </div>
               </div>
             </div>
-
-            <div className="h-full border border-gray-200/20"></div>
-            <div className=" flex-1 ">
+            {/* <div className="h-full border border-gray-200/20"></div> */}
+            <div className=" flex-1 pl-20">
+              <div className="flex flex-col gap-8">
+                <div className="relative w-[500px] h-[300px]">
+                  <Image
+                    src={"/Vinay-Jawgal.png"}
+                    alt="Aster Circuit"
+                    fill
+                    className="object-cover"
+                  ></Image>
+                </div>
+                <div className="flex flex-col gap-4">
+                  <Accordion type="single" collapsible className="w-full">
+                    <AccordionItem value="item-1">
+                      <AccordionTrigger>
+                        <h1 className="text-4xl">Vinay Jawgal</h1>
+                      </AccordionTrigger>
+                      <AccordionContent>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sed quidem repellat enim nulla quae rerum officia?
+                        Cumque repellat natus esse, id libero ut placeat quod?
+                      </AccordionContent>
+                    </AccordionItem>
+                  </Accordion>
+                  <p className="tracking-widest">MD & R&D</p>
+                </div>
+              </div>
+            </div>
+            {/* <div className=" flex-1 ">
               <div className="flex flex-col gap-8">
                 <div className="relative w-[500px] h-[300px]">
                   <Image
@@ -90,26 +130,11 @@ const Team: FC<TeamProps> = ({}) => {
                   <p className="tracking-widest">C0O</p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
-          <div className="w-full mx-auto border border-gray-200/20"></div>
-          <div className="flex gap-12">
-            <div className=" flex-1 ">
-              <div className="flex flex-col gap-8">
-                <div className="relative w-[500px] h-[300px]">
-                  <Image
-                    src={"/Vinay-Jawgal.png"}
-                    alt="Aster Circuit"
-                    fill
-                    className="object-cover"
-                  ></Image>
-                </div>
-                <div className="flex flex-col gap-4">
-                  <h1 className="text-4xl">Vinay Jawgal</h1>
-                  <p className="tracking-widest">MD & R&D</p>
-                </div>
-              </div>
-            </div>
+          {/* <div className="w-full mx-auto border border-gray-200/20"></div> */}
+          {/* <div className="flex gap-12">
+            
             <div className="h-full border border-gray-200/20"></div>
             <div className=" flex-1 ">
               <div className="flex flex-col gap-8">
@@ -127,7 +152,7 @@ const Team: FC<TeamProps> = ({}) => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

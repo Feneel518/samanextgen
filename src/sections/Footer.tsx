@@ -61,7 +61,7 @@ export const Footer = () => {
           <div className=" uppercase tracking-wider">Who are we</div>
           <div className=" uppercase tracking-wider">Contact us</div>
           <div className=" uppercase tracking-wider">Careers</div>
-          <div className=" uppercase tracking-wider">General Support</div>
+          {/* <div className=" uppercase tracking-wider">General Support</div> */}
         </div>
       </div>
     </footer>
