@@ -17,11 +17,7 @@ export const HEADER = [
   {
     id: 2,
     name: "About",
-    heading: (
-      <>
-        Get to know our <br className="max-lg:hidden" /> Story
-      </>
-    ),
+    heading: <>Our Story</>,
     desc: "SAMA is a trusted Original Design Manufacturer (ODM) and system integrator, delivering cutting-edge audio modules for diverse applications. With expertise in connected speakers and offline voice-enabled home appliances, we bring seamless functionality to everyday devices.",
     image: "/meeting.jpg",
   },

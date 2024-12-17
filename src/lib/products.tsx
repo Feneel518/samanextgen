@@ -190,7 +190,7 @@ export const PRODUCTS = [
   {
     id: "avm",
     name: "Your voice can help you!",
-    mainHeading: "Accessory Voice Module.",
+    mainHeading: "Accessory Voice Module",
     paragraph1:
       "The Accessory Voice Module is a versatile, all-in-one solution designed to simplify and modernize the way you interact with IR-enabled devices. With advanced offline voice recognition and seamless mobile application integration, it eliminates the need for handheld remotes while delivering a customizable experience tailored to your needs.",
     paragraph2:

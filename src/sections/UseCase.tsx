@@ -153,7 +153,7 @@ const UseCase: FC<UseCaseProps> = ({}) => {
             </div>
           </div>
         </div> */}
-        <div className="mt-8">
+        {/* <div className="mt-8">
           <Paragraph>
             <p className=" w-1/2 mx-auto text-center ">
               SAMA NextGen is at the forefront of innovation, specializing in
@@ -163,7 +163,7 @@ const UseCase: FC<UseCaseProps> = ({}) => {
               functionality and exceptional user experience.
             </p>
           </Paragraph>
-        </div>
+        </div> */}
       </div>
     </section>
   );
