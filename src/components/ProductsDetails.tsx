@@ -8,6 +8,7 @@ import ProductCarousel from "./ProductCarousel";
 import { ProductType } from "@/lib/products";
 import { cn } from "@/lib/utils";
 import AnimatedImage from "./AnimatedImage";
+import Slider from "./Slider";
 
 interface ProductsDetailsProps {
   product: ProductType;
@@ -26,6 +27,9 @@ const ProductsDetails: FC<ProductsDetailsProps> = ({ product }) => {
             </div>
             <div className="relative w-full h-[400px] ">
               <AnimatedImage></AnimatedImage>
+              <div className="mt-4">
+                <Slider></Slider>
+              </div>
               {/* <div
                 className={cn(
                   "absolute inset-0 p-10 z-10 text-black font-oswald text-5xl flex flex-col gap-4",
