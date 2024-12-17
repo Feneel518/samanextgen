@@ -12,7 +12,7 @@ export const HEADER = [
     name: "Product",
     heading: <>Products</>,
     desc: "SAMA Next Gen delivers unmatched scalability, adapting seamlessly to diverse needs across size, power, cost, ecosystems, unique connectivity capabilities, and customizations. Our solutions are purpose-built to address the specific requirements of our customers, ensuring maximum flexibility and value.",
-    image: "/productHero2.jpg",
+    image: "/productHero3.jpg",
   },
   {
     id: 2,
