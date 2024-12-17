@@ -14,6 +14,7 @@ import { ChevronRightIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { ChevronLeftIcon } from "@radix-ui/react-icons";
 import { createContext } from "react";
+import { useRouter } from "next/navigation";
 
 type CarouselContextProps = {
   carouselOptions?: EmblaOptionsType;

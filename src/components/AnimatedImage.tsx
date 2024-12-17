@@ -1,26 +1,23 @@
 import Image from "next/image";
 import { FC } from "react";
 import Fan from "./confuse/Fan";
+import Slider from "./Slider";
 
 interface AnimatedImageProps {}
 
 const AnimatedImage: FC<AnimatedImageProps> = ({}) => {
   return (
-    <div className=" rounded-xl h-80 relative bg-gradient-to-br from-sama-primary to bg-sama-secondary">
-      <div className="absolute w-40 aspect-square -bottom-4 -left-4">
+    <div className="h-[400px] border rounded-xl bg-gradient-to-br from-sama-primary to bg-sama-secondary">
+      <div className="w-full  aspect-[1000/780] relative">
         <Image
-          src={"/face.png"}
+          src={"/ivm.png"}
           alt="face"
           fill
-          className="object-contain"
+          className="object-cover object-top"
         ></Image>
       </div>
-      <div className="absolute bottom-10 left-36 text-xl text-black">
-        Hey SAMA, turn on the fan
-      </div>
-
-      <div className="absolute -top-36 right-0">
-        <Fan></Fan>
+      <div className="-mt-10">
+        <Slider></Slider>
       </div>
     </div>
   );

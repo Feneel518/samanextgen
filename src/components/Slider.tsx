@@ -19,17 +19,17 @@ const Slider: FC<SliderProps> = ({}) => {
       <CarouselMainContainer className="">
         {/* {Array.from({ length: 5 }).map((_, index) => ( */}
         <SliderMainItem className="bg-transparent ">
-          <Paragraph className="text-center">
+          <Paragraph className="text-center text-black">
             <p>Single Language support</p>
           </Paragraph>
         </SliderMainItem>
         <SliderMainItem className="bg-transparent">
-          <Paragraph className="text-center">
+          <Paragraph className="text-center text-black">
             <p>Upto 50 commands support</p>
           </Paragraph>
         </SliderMainItem>
         <SliderMainItem className="bg-transparent">
-          <Paragraph className="text-center">
+          <Paragraph className="text-center text-black">
             <p>Internal Noise Cancellation</p>
           </Paragraph>
         </SliderMainItem>

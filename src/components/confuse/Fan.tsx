@@ -56,11 +56,7 @@ const Fan: FC<FanProps> = ({}) => {
           className="object-contain"
         ></Image>
       </div>
-      <div
-        className={`relative lg:size-[400px] size-[300px]  ${
-          hover && "blade"
-        } group-hover:delay-300`}
-      >
+      <div className={`relative lg:size-[400px] size-[300px]  `}>
         <Image
           src={"/ceilingbalde.png"}
           alt="ceiling fan"
