@@ -395,7 +395,7 @@ const CarouselPrevious = forwardRef<
 
         orientation === "vertical"
           ? "-top-2 left-1/2 -translate-x-1/2 rotate-90"
-          : "-left-2 top-1/2 -translate-y-1/2",
+          : "max-sm:-left-8 -left-2 top-1/2 -translate-y-1/2",
         className
       )}
       onClick={scroll}
@@ -432,7 +432,7 @@ const CarouselNext = forwardRef<
         "absolute h-10 w-10 rounded-full z-10",
         orientation === "vertical"
           ? "-bottom-2 left-1/2 -translate-x-1/2 rotate-90"
-          : "-right-2 top-1/2 -translate-y-1/2",
+          : "max-sm:-right-8 -right-2 top-1/2 -translate-y-1/2",
         className
       )}
       onClick={scroll}

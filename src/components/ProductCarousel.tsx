@@ -33,21 +33,13 @@ const ProductCarousel: FC<ProductCarouselProps> = ({ productComponents }) => {
         {/* {Array.from({ length: 5 }).map((_, index) => ( */}
         {productComponents.map((comp, index) => {
           return (
-            <SliderMainItem key={index} className="bg-transparent ">
-              <div className="flex flex-col gap-8">
+            <SliderMainItem key={index} className="bg-transparent h-fit">
+              <div className="flex flex-col gap-8 justify-between h-full">
                 <Heading className="ml-16">
                   <h1>{comp.name}</h1>
                 </Heading>
-                <div className="flex items-center justify-center">
-                  <div className="relative size-[400px] shrink-0">
-                    <Image
-                      src={"/Aster.png"}
-                      alt={comp.name}
-                      fill
-                      className="object-contain rounded-2xl"
-                    ></Image>
-                  </div>
-                  <ol className="list-disc lg:ml-16 flex flex-col gap-4">
+                <div className="lg:ml-8 flex flex-col xl:flex-row xl:items-center justify-center gap-8">
+                  <ol className="list-disc ml-4 xl:ml-16 flex flex-col gap-4  ">
                     {comp.features.map((fea, inde) => {
                       return (
                         <li key={inde}>
@@ -56,6 +48,14 @@ const ProductCarousel: FC<ProductCarouselProps> = ({ productComponents }) => {
                       );
                     })}
                   </ol>
+                  <div className="relative size-[380px] md:size-[500px] shrink-0 ">
+                    <Image
+                      src={"/Aster.png"}
+                      alt={comp.name}
+                      fill
+                      className="object-cover rounded-2xl"
+                    ></Image>
+                  </div>
                 </div>
               </div>
             </SliderMainItem>
