@@ -50,7 +50,7 @@ export const Hero = () => {
                 </div>
 
                 <div className="max-lg:-mt-8">
-                  <div className="relative h-[400px] lg:h-[500px]">
+                  <div className="relative h-[400px] lg:h-[600px] ">
                     <div className="absolute w-full h-full z-10  ">
                       {/* <div className="absolute top-0 w-[70%]   h-full -mt-36 ml-28">
                         <Image
@@ -62,7 +62,7 @@ export const Hero = () => {
                       </div> */}
                     </div>
                     <Image
-                      src={"/heroImage4.jpg"}
+                      src={"/heroImage5.png"}
                       alt="Hero Image"
                       fill
                       className="object-cover object-top rounded-3xl"

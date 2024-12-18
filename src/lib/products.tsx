@@ -133,9 +133,9 @@ export const PRODUCTS = [
           "Two Languages support recognition for versatility among diverse users",
           "Improved internal noise suppression and active gain control technology",
           "Advanced voice module for enhanced voice control in smart home devices",
-          "Better voice recognition during high speed and mechanical noise environemnts",
           "Equipped with noise suppression and active gain control for clear voice input",
           "Ideal for upgrading traditional appliances like fans into modern smart systems",
+          "Better voice recognition during high speed and mechanical noise environemnts",
         ],
       },
       {

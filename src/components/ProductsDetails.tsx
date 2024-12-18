@@ -88,7 +88,7 @@ const ProductsDetails: FC<ProductsDetailsProps> = ({ product }) => {
               <p>{product.paragraph2}</p>
             </Paragraph>
           </div>
-          <div className="w-full mx-auto border border-gray-200/20 "></div>
+          {/* <div className="w-full mx-auto border border-gray-200/20 "></div> */}
         </div>
       </div>
     </section>
