@@ -15,7 +15,11 @@ const ApplicationsDetails: FC<ApplicationsDetailsProps> = ({ application }) => {
         application.id % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
       } max-lg:gap-10 border-b border-gray-200/20`}
     >
-      <div className={`flex-1 ${application.id % 2 === 0 ? "" : "lg:ml-40"}`}>
+      <div
+        className={`flex-1 ${
+          application.id % 2 === 0 ? "lg:ml-40" : "lg:ml-40"
+        }`}
+      >
         <Heading className="">
           <h1 className="">{application.heading}</h1>
         </Heading>
