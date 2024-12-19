@@ -84,112 +84,24 @@ export const PRODUCTS = [
         image: "/Bellis.png",
 
         features: [
-          // <>
-          //   Offline voice processing with{" "}
-          //   <span className="underline underline-offset-4">
-          //     dual digital microphones
-          //   </span>
-          // </>,
-          // <>
-          //   Supports seamless connectivity via{" "}
-          //   <span className="underline underline-offset-4">UART</span> or
-          //   similar protocols
-          // </>,
-          // <>
-          //   <span className="underline underline-offset-4">Dual-language</span>{" "}
-          //   recognition for versatility among diverse users{" "}
-          // </>,
-          // <>
-          //   Improved{" "}
-          //   <span className="underline underline-offset-4">far-field</span>{" "}
-          //   recognition and superior command accuracy
-          // </>,
-          // <>
-          //   Advanced voice module for{" "}
-          //   <span className="underline underline-offset-4">
-          //     enhanced voice control
-          //   </span>{" "}
-          //   in smart home devices{" "}
-          // </>,
-          // <>
-          //   Equipped with{" "}
-          //   <span className="underline underline-offset-4">
-          //     noise suppression
-          //   </span>{" "}
-          //   and{" "}
-          //   <span className="underline underline-offset-4">
-          //     active gain control
-          //   </span>{" "}
-          //   for clear voice input{" "}
-          // </>,
-          // <>
-          //   Ideal for upgrading traditional appliances like fans into{" "}
-          //   <span className="underline underline-offset-4">
-          //     modern smart systems
-          //   </span>{" "}
-          // </>,
-          "Offline voice processing with dual digital microphones",
-          "Supports seamless connectivity via UART or similar protocols",
-          "Two Languages support recognition for versatility among diverse users",
-          "Improved internal noise suppression and active gain control technology",
-          "Advanced voice module for enhanced voice control in smart home devices",
-          "Equipped with noise suppression and active gain control for clear voice input",
-          "Ideal for upgrading traditional appliances like fans into modern smart systems",
-          "Better voice recognition during high speed and mechanical noise environemnts",
+          "Offline voice recognition, functioning seamlessly without requiring an internet connection.",
+          "Features built-in noise cancellation, allowing it to process voice commands accurately even at high speeds or amidst mechanical noise from fans.",
+          "Dual language support.",
+          "Designed for seamless integration with conventional household appliances, such as fans, air conditioners, televisions, and water heaters.",
+          "Enables device communication via UART or I2C protocols.",
+          "Designed with a compact form factor and a hassle-free plug-and-play setup, requiring no mobile application for operation.",
         ],
       },
       {
         name: "Dahlia",
         image: "/Dahlia.png",
         features: [
-          // <>
-          //   Excels in{" "}
-          //   <span className="underline underline-offset-4">far-field</span>{" "}
-          //   voice recognition for larger spaces
-          // </>,
-          // <>
-          //   Offline voice processing with{" "}
-          //   <span className="underline underline-offset-4">
-          //     four digital microphones
-          //   </span>
-          // </>,
-          // <>
-          //   Transforms appliances like{" "}
-          //   <span className="underline underline-offset-4">fans</span> into
-          //   intelligent systems
-          // </>,
-          // <>
-          //   <span className="underline underline-offset-4">Premium voice</span>{" "}
-          //   module with next-generation voice capabilities
-          // </>,
-          // <>
-          //   <span className="underline underline-offset-4">Multi-language</span>{" "}
-          //   recognition for diverse users and global applications
-          // </>,
-          // <>
-          //   Supports seamless integration via{" "}
-          //   <span className="underline underline-offset-4">UART</span> or other
-          //   communication protocols
-          // </>,
-          // <>
-          //   Advanced{" "}
-          //   <span className="underline underline-offset-4">
-          //     noise suppression
-          //   </span>{" "}
-          //   and{" "}
-          //   <span className="underline underline-offset-4">
-          //     active gain control
-          //   </span>{" "}
-          //   for crystal-clear voice input
-          // </>,
-          "Includes features of Aster and Bellis",
-          "Offline voice processing with four digital microphones",
-          "Excels in far-field voice recognition for larger spaces",
-          "Transforms appliances like fans into intelligent systems",
-          "Supports seamless integration via UART or other communication protocols",
-          "Two Langugaes Support recognition for diverse users and global applications",
-          "Added External Noise Cancellation with Internal Noise Cancellation and Active Gain Control",
-          "Enhanced Voice recognition even in presence of other home appliances like TV due to external noise cancellation",
+          "Operates offline with reliable voice recognition, eliminating the need for an internet connection.",
+          "Equipped with advanced external noise cancellation, ensuring precise voice command recognition even in environments with nearby appliances like TVs or when people are conversing.",
+          "Supports two languages for enhanced usability.",
+          "Optimized for effortless integration into traditional home appliances such as fans, air conditioners, TVs, and water heaters.",
+          "Facilitates communication with devices through UART or I2C interfaces.",
+          "Features a sleek, compact design for efficient space utilization without the need of a mobile application.",
         ],
       },
     ],
@@ -216,73 +128,14 @@ export const PRODUCTS = [
         name: "Eruca",
         image: "",
         features: [
-          // <>
-          //   Supports{" "}
-          //   <span className="underline underline-offset-4">
-          //     Multiple Languages
-          //   </span>
-          // </>,
-          // <>
-          //   <span className="underline underline-offset-4">Customizable</span>{" "}
-          //   to meet business-specific needs
-          // </>,
-          // <>
-          //   Supports{" "}
-          //   <span className="underline underline-offset-4">
-          //     Over-the-Air (OTA)
-          //   </span>{" "}
-          //   updates for ongoing improvements
-          // </>,
-          // <>
-          //   Equipped with{" "}
-          //   <span className="underline underline-offset-4">
-          //     two Digital microphones
-          //   </span>{" "}
-          //   for superior voice capture{" "}
-          // </>,
-          // <>
-          //   Control devices using{" "}
-          //   <span className="underline underline-offset-4">
-          //     simple voice commands
-          //   </span>{" "}
-          //   or a{" "}
-          //   <span className="underline underline-offset-4">
-          //     mobile application
-          //   </span>{" "}
-          // </>,
-          // <>
-          //   Can be integrated into{" "}
-          //   <span className="underline underline-offset-4">IoT devices</span>{" "}
-          //   like speakers, enabling Bluetooth and Wi-Fi audio streaming{" "}
-          // </>,
-          // <>
-          //   Innovative voice module enabling offline voice processing for
-          //   controlling{" "}
-          //   <span className="underline underline-offset-4">
-          //     IR-enabled devices
-          //   </span>{" "}
-          //   (ACs, TVs, fans, lights){" "}
-          // </>,
-          // <>
-          //   Utilizes <span className="underline underline-offset-4">AGC</span>{" "}
-          //   (Active Gain Control),{" "}
-          //   <span className="underline underline-offset-4">AEC</span> (Acoustic
-          //   Echo Cancellation),{" "}
-          //   <span className="underline underline-offset-4">VNR</span> (Voice to
-          //   Noise Ratio Estimator), and{" "}
-          //   <span className="underline underline-offset-4">NS</span> (Noise
-          //   Suppression) for enhanced voice clarity in noisy environments.
-          // </>,
-          "Supports Multiple Languages",
-          "Customizable to meet business-specific needs",
-          "Voice control for playback functions in IoT devices",
-          "Supports Over-the-Air (OTA) updates for ongoing improvements",
-          "Equipped with two Digital microphones for superior voice capture",
-          "Control devices using simple voice commands or a mobile application",
-          "Can be integrated into IoT devices like speakers, enabling Bluetooth and Wi-Fi audio streaming",
-          "Advanced voice recognition ability that allows it to recognise commands during audio playback in a speaker",
-          "IR Learning ability that helps you learn IR hand held remotes of your TV, AC etc. So that you dont have to manage multiple remotes",
-          "Utilizes AGC(Active Gain Control), AEC (Acoustic Echo Cancellation), VNR (Voice to Noise Ratio Estimator), and NS (Noise Suppression) for enhanced voice clarity in noisy environments.",
+          "Delivers dependable offline voice recognition, fully functional without requiring an internet connection.",
+          "IR Learning ability that helps you learn IR handheld remotes of your TV, AC, etc., so that you don't have to manage multiple remotes.",
+          "Supports Over-the-Air (OTA) updates for ongoing improvements.",
+          "Control devices effortlessly through intuitive voice commands or via a dedicated mobile application for added convenience and flexibility.",
+          "Can be integrated into devices like speakers, enabling Bluetooth and Wi-Fi audio streaming.",
+          "Advanced voice recognition ability that allows it to recognize voice commands during audio playback in a speaker.",
+          "Utilizes AGC (Active Gain Control), AEC (Acoustic Echo Cancellation), VNR (Voice to Noise Ratio Estimator), and NS (Noise Suppression) for enhanced voice clarity in noisy environments.",
+          "Customizable to meet business-specific needs.",
         ],
       },
     ],

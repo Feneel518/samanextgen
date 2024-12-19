@@ -49,7 +49,7 @@ const ProductCarousel: FC<ProductCarouselProps> = ({ productComponents }) => {
                     })}
                   </ol>
                 </div>
-                <div className="relative size-[380px] md:size-[500px] shrink-0 mx-auto ">
+                <div className="relative w-[380px] h-[500px] md:w-[700px] md:h-[500px] shrink-0 mx-auto ">
                   <Image
                     src={comp.image}
                     alt={comp.name}
