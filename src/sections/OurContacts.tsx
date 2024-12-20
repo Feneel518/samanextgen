@@ -1,3 +1,4 @@
+import ContactComponent from "@/components/ContactComponent";
 import Heading from "@/components/Heading";
 import Paragraph from "@/components/Paragraph";
 import TeamComponent from "@/components/TeamComponent";
@@ -20,33 +21,33 @@ const OurContacts: FC<OurContactsProps> = ({}) => {
           </div>
         </div>
         <div className=" flex flex-col mt-10 gap-5 lg:pl-8 xl:hidden w-full">
-          <div className="flex flex-col w-full items-center gap-5">
-            <TeamComponent
-              imageUrl="/MichaelPauli.jpg"
-              title="Michael Pauli"
-              description="CEO"
-            ></TeamComponent>
+          <div className="flex flex-col w-full  gap-5">
+            <ContactComponent
+              icon={<Phone strokeWidth={1} size={50}></Phone>}
+              title="+91 1234567890"
+              description="Phone Number"
+            ></ContactComponent>
             <div className="w-full h-[1px] xl:w-[1px] xl:h-full bg-gray-200/20"></div>
-            <TeamComponent
-              imageUrl="/April-Ho.png"
-              title="April Ho"
-              description="COO"
-            ></TeamComponent>
+            <ContactComponent
+              icon={<AtSign strokeWidth={1} size={50}></AtSign>}
+              title="Helpline@sama.com"
+              description="Email Address"
+            ></ContactComponent>
             <div className="w-full h-[1px] xl:w-[1px] xl:h-full bg-gray-200/20"></div>
           </div>
-          <div className="flex flex-col items-center xl:flex-row gap-5">
-            <TeamComponent
-              imageUrl="/Vinay-Jawgal.png"
-              title="Vinay Jawgal"
-              description="MD & R&D"
-            ></TeamComponent>
+          <div className="flex flex-col  xl:flex-row gap-5">
+            <ContactComponent
+              icon={<FaWhatsapp strokeWidth={1} size={50}></FaWhatsapp>}
+              title="+91 1234567890"
+              description="Whatsapp"
+            ></ContactComponent>
             <div className="w-full h-[1px] xl:w-[1px] xl:h-full bg-gray-200/20"></div>
 
-            <TeamComponent
-              imageUrl="/FrancoisGaly.png"
-              title="Francois Galy"
-              description="Adviser Sales and Marketing"
-            ></TeamComponent>
+            <ContactComponent
+              icon={<MapPin strokeWidth={1} size={50}></MapPin>}
+              title="Bangalore - 560103"
+              description="Address"
+            ></ContactComponent>
           </div>
         </div>
         {/*  */}

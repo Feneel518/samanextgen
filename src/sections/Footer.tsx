@@ -47,8 +47,8 @@ export const socialLinks = [
 export const Footer = () => {
   return (
     <footer className="px-8">
-      <div className="flex py-10 lg:py-20 ">
-        <div className="lg:w-[550px] lg:border-r border-gray-200/20 flex items-start lg:shrink-0 ">
+      <div className="flex py-4">
+        <div className="lg:w-[550px] lg:border-r border-gray-200/20 flex items-start lg:shrink-0 flex-col ">
           <div className="size-32 relative ">
             <Image
               src={"/logo.png"}
@@ -57,8 +57,11 @@ export const Footer = () => {
               className="object-contain"
             ></Image>
           </div>
+          <p className="text-xs md:w-[30%]">
+            #201, 3rd Floor, Green Glen Layout, Bellandur, Bangalore - 560103
+          </p>
         </div>
-        <div className="lg:px-40 flex items-center w-full justify-between ">
+        <div className="lg:px-40 flex max-lg:flex-col items-center w-full justify-between ">
           <Link href={"/products"} className=" uppercase tracking-wider">
             products
           </Link>

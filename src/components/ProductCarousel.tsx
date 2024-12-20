@@ -33,9 +33,13 @@ const ProductCarousel: FC<ProductCarouselProps> = ({ productComponents }) => {
         {/* {Array.from({ length: 5 }).map((_, index) => ( */}
         {productComponents.map((comp, index) => {
           return (
-            <SliderMainItem key={index} className="bg-transparent h-fit">
-              <div className="grid grid-cols-1 lg:grid-cols-2 items-center  pl-4 max-lg:gap-10 ">
-                <div className="flex flex-col gap-8 pl-20">
+            <SliderMainItem key={index} className="bg-transparent  ">
+              <div className="grid grid-cols-1 lg:grid-cols-2 items-center  justify-between pl-4 max-lg:gap-10 ">
+                <div
+                  className={`flex flex-col gap-8 lg:pl-20 ${
+                    comp.name === "Eruca" ? "" : "max-sm:h-[650px]"
+                  } `}
+                >
                   <Heading className="">
                     <h1>{comp.name}</h1>
                   </Heading>
@@ -49,7 +53,7 @@ const ProductCarousel: FC<ProductCarouselProps> = ({ productComponents }) => {
                     })}
                   </ol>
                 </div>
-                <div className="relative w-[380px] h-[500px] md:w-[700px] md:h-[500px] shrink-0 mx-auto ">
+                <div className="relative w-[350px] h-[300px] md:w-[700px] md:h-[500px] shrink-0 lg:mx-auto ">
                   <Image
                     src={comp.image}
                     alt={comp.name}
@@ -58,30 +62,6 @@ const ProductCarousel: FC<ProductCarouselProps> = ({ productComponents }) => {
                   ></Image>
                 </div>
               </div>
-              {/* <div className="flex flex-col gap-8 justify-between h-full  ml-4 xl:ml-16">
-                <Heading className="">
-                  <h1>{comp.name}</h1>
-                </Heading>
-                <div className="flex flex-col xl:flex-row xl:items-center justify-center gap-8">
-                  <ol className="list-disc flex flex-col gap-4  ">
-                    {comp.features.map((fea, inde) => {
-                      return (
-                        <li key={inde}>
-                          <Paragraph>{fea}</Paragraph>
-                        </li>
-                      );
-                    })}
-                  </ol>
-                  <div className="relative size-[380px] md:size-[500px] shrink-0 ">
-                    <Image
-                      src={comp.image}
-                      alt={comp.name}
-                      fill
-                      className="object-cover rounded-2xl"
-                    ></Image>
-                  </div>
-                </div>
-              </div> */}
             </SliderMainItem>
           );
         })}

@@ -30,9 +30,9 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} ${syne.variable} antialiased bg-sama-background text-gray-300 font-poppins m-4 border border-gray-200/20`}
       >
-        <div className="fixed bottom-8 left-8">
+        {/* <div className="fixed bottom-8 left-8">
           <ScreenSize></ScreenSize>
-        </div>
+        </div> */}
         <Header></Header>
         {children}
         <Footer></Footer>
