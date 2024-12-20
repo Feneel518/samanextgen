@@ -21,62 +21,13 @@ export const PRODUCTS = [
         name: "Aster",
         image: "/Aster.png",
         features: [
-          // <>
-          //   {/* Built with a{" "}
-          //   <span className="underline underline-offset-4">
-          //     single digital microphone
-          //   </span>
-          // </>,
-          // <>
-          //   <span className="underline underline-offset-4">
-          //     Single-language support
-          //   </span>{" "}
-          //   for precise voice control
-          // </>,
-          // <>
-          //   Ideal for integration into existing appliances like{" "}
-          //   <span className="underline underline-offset-4">fans </span>{" "}
-          // </>,
-          // <>
-          //   Supports seamless communication via{" "}
-          //   <span className="underline underline-offset-4">UART</span> or
-          //   similar protocols
-          // </>,
-          // <>
-          //   <span className="underline underline-offset-4">
-          //     Compact voice module
-          //   </span>{" "}
-          //   for simplifying and smartening home appliances{" "}
-          // </>,
-          // <>
-          //   <span className="underline underline-offset-4">
-          //     Offline voice processing
-          //   </span>{" "}
-          //   for consistent and{" "}
-          //   <span className="underline underline-offset-4">
-          //     reliable performance
-          //   </span>{" "}
-          //   without internet{" "}
-          // </>,
-          // <>
-          //   Equipped with{" "}
-          //   <span className="underline underline-offset-4">
-          //     noise suppression
-          //   </span>{" "}
-          //   and{" "}
-          //   <span className="underline underline-offset-4">
-          //     active gain control
-          //   </span>{" "}
-          //   for clear command recognition
-          // </>, */}
-          "Supports Upto 50 Voice Commands",
-          "Built with a single digital microphone",
-          "Single-language support for precise voice control",
-          "Ideal for integration into existing appliances like fans",
-          "Supports seamless communication via UART or other protocols",
-          "Compact voice module for simplifying and smartening home appliances",
-          "Offline voice processing for consistent and reliable performance without internet",
-          "Equipped with Excellent Internal Noise Cancellation and Active Gain Control Technology",
+          "Offline Voice processing without the need of Internet.",
+          "Equipped with Internal Noise Compensation that enables it to recognize voice commands at high speeds and with mechanical noise from the fan.",
+          "Supports up to 50 Voice Commands.",
+          "Single language support.",
+          "Made for integration into existing traditional appliances like fans, ACs, TVs, and Geysers.",
+          "Supports communication with devices using UART or I2C.",
+          "Compact form factor with a straightforward plug-and-play design, eliminating the need for a mobile application to operate.",
         ],
       },
       {
