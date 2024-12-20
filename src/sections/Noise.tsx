@@ -80,10 +80,10 @@ const Noise: FC<NoiseProps> = ({}) => {
                 </p> */}
               </div>
               <Image
-                src={"/journey.jpg"}
+                src={"/Journey1.png"}
                 alt="Integrated Voice Module"
                 fill
-                className="object-cover rounded-3xl -scale-100"
+                className="object-contain rounded-3xl "
               ></Image>
             </div>
           </div>

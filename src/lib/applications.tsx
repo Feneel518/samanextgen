@@ -35,7 +35,7 @@ export const APPLICATIONS = [
     features: [
       "Modular design for easy adaptation into IoT devices.",
       "Advanced features like offline voice processing and OTA updates for dynamic environments.",
-      "LED indication systems for status visibility and user feedback.",
+      "Advance noise cancellation technologies used",
     ],
     image: "/iot.jpg",
   },

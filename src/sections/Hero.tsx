@@ -163,7 +163,7 @@ export const Hero = () => {
 
                 <div className="relative hidden lg:flex lg:w-[900px] aspect-[4/2]">
                   <Image
-                    src={"/offlineWhite.png"}
+                    src={"/offlineWhite1.png"}
                     alt="offline control"
                     fill
                     className="object-contain"
