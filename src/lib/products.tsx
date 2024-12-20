@@ -128,8 +128,8 @@ export const PRODUCTS = [
         name: "Eruca",
         image: "/Eruca.png",
         features: [
-          "Delivers dependable offline voice recognition, fully functional without requiring an internet connection.",
           "IR Learning ability that helps you learn IR handheld remotes of your TV, AC, etc., so that you don't have to manage multiple remotes.",
+          "Delivers dependable offline voice recognition, fully functional without requiring an internet connection.",
           "Supports Over-the-Air (OTA) updates for ongoing improvements.",
           "Control devices effortlessly through intuitive voice commands or via a dedicated mobile application for added convenience and flexibility.",
           "Can be integrated into devices like speakers, enabling Bluetooth and Wi-Fi audio streaming.",
