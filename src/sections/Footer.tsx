@@ -5,6 +5,7 @@ import {
   faDiscord,
 } from "@fortawesome/free-brands-svg-icons";
 import Image from "next/image";
+import Link from "next/link";
 
 export const navItems = [
   {
@@ -58,9 +59,19 @@ export const Footer = () => {
           </div>
         </div>
         <div className="lg:px-40 flex items-center w-full justify-between ">
-          <div className=" uppercase tracking-wider">Who are we</div>
-          <div className=" uppercase tracking-wider">Contact us</div>
-          <div className=" uppercase tracking-wider">Careers</div>
+          <Link href={"/products"} className=" uppercase tracking-wider">
+            products
+          </Link>
+          <Link href={"/applications"} className=" uppercase tracking-wider">
+            Applications
+          </Link>
+          <Link href={"/our-story"} className=" uppercase tracking-wider">
+            Who are we
+          </Link>
+          <Link href={"/contact-us"} className=" uppercase tracking-wider">
+            Contact us
+          </Link>
+
           {/* <div className=" uppercase tracking-wider">General Support</div> */}
         </div>
       </div>
