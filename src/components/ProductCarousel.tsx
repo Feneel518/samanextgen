@@ -54,7 +54,7 @@ const ProductCarousel: FC<ProductCarouselProps> = ({ productComponents }) => {
                     src={comp.image}
                     alt={comp.name}
                     fill
-                    className="object-cover rounded-2xl"
+                    className="object-contain rounded-2xl"
                   ></Image>
                 </div>
               </div>

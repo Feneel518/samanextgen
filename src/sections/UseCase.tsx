@@ -39,7 +39,7 @@ const UseCase: FC<UseCaseProps> = ({}) => {
                   voice processing.
                 </p>
                 <Link
-                  href={"/products"}
+                  href={"/products?section=ivm"}
                   className="flex items-center gap-1 group cursor-pointer text-xs text-lack"
                 >
                   See More{" "}

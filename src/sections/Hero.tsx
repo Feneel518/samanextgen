@@ -86,7 +86,7 @@ export const Hero = () => {
                         Aster
                       </h1>
                       <Link
-                        href={"/products"}
+                        href={"/products?section=ivm"}
                         className="flex items-center gap-1 group cursor-pointer text-sm text-gray-400"
                       >
                         Integrated Voice Module
@@ -104,7 +104,7 @@ export const Hero = () => {
                         Bellis
                       </h1>
                       <Link
-                        href={"/products"}
+                        href={"/products?section=ivm"}
                         className="flex items-center gap-1 group cursor-pointer text-sm text-gray-400"
                       >
                         Integrated Voice Module
@@ -122,7 +122,7 @@ export const Hero = () => {
                         Dahlia
                       </h1>
                       <Link
-                        href={"/products"}
+                        href={"/products?section=ivm"}
                         className="flex items-center gap-1 group cursor-pointer text-sm text-gray-400"
                       >
                         Integrated Voice Module
@@ -140,7 +140,7 @@ export const Hero = () => {
                         Eruca
                       </h1>
                       <Link
-                        href={"/products"}
+                        href={"/products?section=avm"}
                         className="flex items-center gap-1 group cursor-pointer text-sm text-gray-400"
                       >
                         Accessory Voice Module

@@ -126,7 +126,7 @@ export const PRODUCTS = [
     components: [
       {
         name: "Eruca",
-        image: "",
+        image: "/Eruca.png",
         features: [
           "Delivers dependable offline voice recognition, fully functional without requiring an internet connection.",
           "IR Learning ability that helps you learn IR handheld remotes of your TV, AC, etc., so that you don't have to manage multiple remotes.",

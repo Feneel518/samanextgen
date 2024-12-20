@@ -15,8 +15,6 @@ interface pageProps {
 }
 
 const page: FC<pageProps> = ({ searchParams }) => {
-  console.log(searchParams);
-
   useEffect(() => {
     const scrolltoHash = function (element_id: string) {
       const element = document.getElementById(element_id);
